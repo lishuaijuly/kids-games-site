@@ -1,46 +1,69 @@
-# Animal Games Kids — GitHub Pages
+# CuriousKite kids-games-site
 
-面向家长和监护人的儿童 iOS 游戏官网与支持中心。纯 HTML / CSS / JavaScript，无外部框架。
+Parent-facing website for the CuriousKite iPhone/iPad children's game series.
 
-## 当前公开联系
-- Support / Privacy: `animalgames.kids@outlook.com`
+## Canonical source and synchronization
 
-## 主要页面
-- `index.html` — 首页、游戏库、家长信任信息
-- `support.html` — 恢复购买、购买异常、技术故障和人工支持
-- `privacy.html` — 网站与儿童游戏隐私原则
-- `game.html?id=...` — 游戏详情
-- `404.html` — 404 页面
-- `assets/games.json` — 游戏数据
+- GitHub repository: `lishuaijuly/kids-games-site`
+- GitHub Pages: `https://lishuaijuly.github.io/kids-games-site/`
+- Google Drive working copy: `/ios游戏/kids-games-site/`
+- GitHub comparison baseline recorded when this Drive copy was initialized:
+  - branch: `main`
+  - commit: `5ca24ed77a608fe508a023371fb7c763fc501603`
+  - commit message: `update security`
+  - committed: 2026-08-17 04:39:52 UTC
+  - this SHA is historical comparison evidence only; it does not make GitHub the upstream source
+- The Google Drive copy may intentionally be newer than GitHub. It is the **canonical manual-submit working source** for website content in this project.
+- Production `assets/games.json` contains **released games only**; planned/development games stay in internal project documents until formal release.
+- GitHub-only changes are treated as drift, not automatic upstream truth. They may be migrated back into Drive only after explicit developer confirmation.
 
-## 隐私设计
-- 源码不写个人姓名、家庭地址、私人邮箱或个人 GitHub 用户名。
-- 当前不使用外部字体、广告、统计脚本或联系表单。
-- 对外联系统一使用 `animalgames.kids@outlook.com`。
+## Update rule
 
-## 发布新游戏时
-1. 更新 `assets/games.json` 的状态、App Store URL 和实际功能。
-2. 核对支持页中的版本/设备信息。
-3. 核对隐私政策是否仍与实际 App 数据处理一致。
-4. 只宣传已经真实实现的功能。
+When a game is formally released or when brand/support/privacy information changes:
 
-## GitHub Pages
-将全部文件上传到仓库根目录，Pages 使用 `main` + `/(root)` 发布。
+1. Update the Google Drive working copy first.
+2. Run the site/brand release checklist.
+3. Copy the contents of this folder into the local `kids-games-site` Git checkout.
+4. Review the diff.
+5. Commit and push manually.
+6. Verify GitHub Pages after deployment.
 
+Do not copy Drive metadata or unrelated `/ios游戏` files into the repository.
 
-## 语言
-- 支持简体中文、English、日本語
-- 首次访问自动读取浏览器首选语言：
-  - 浏览器第一首选语言为 `zh-*` → 中文
-  - 浏览器第一首选语言为 `ja-*` → 日本語
-  - 其他第一首选语言 → English
-- 用户手动切换后使用 `localStorage` 记住选择
-- 页面标题、描述、支持邮件主题也随语言切换
+## Brand reference
 
-- 用户已手动选择的语言优先级高于浏览器语言。
+- Mother brand: **CuriousKite**
+- Logo: rounded semi-flat kite + exploration trail.
+- Canonical brand values are **not redefined in this README**. Use `/ios游戏/CURIOUSKITE_BRAND_GUIDE_CURRENT.md` and `/ios游戏/assets-source/_shared/CuriousKite/tokens/CURIOUSKITE_BRAND_TOKENS.json`; `assets/styles.css` must mirror those tokens exactly.
+- Website logo/favicons are copied from `/ios游戏/assets-source/_shared/CuriousKite/logo/CuriousKite-logo-mark.svg`; do not independently redraw them in this repository.
+- Approved value lines are not duplicated in this README. Runtime copy must match `/ios游戏/CURIOUSKITE_BRAND_GUIDE_CURRENT.md`; the Site Checklist/consistency script validates the public pages against that authority.
 
-## 家长安心与游戏价值
-首页把两类信息分开：
-- 家长安心：无广告、无社交、无聊天、无排行榜、无订阅、无需儿童账号、成人确认购买。
-- 游戏价值：益智与问题解决、专注、观察、空间理解、逻辑判断、难度递进。
-- 文案避免“提高智商/开发大脑/保证学习效果”等不可验证承诺。
+## Website role
+
+This is a parent/guardian information and support site. Children's gameplay is in the iPhone/iPad apps. The site does not provide child accounts, chat, comments, advertising, or online gameplay.
+
+## Languages
+
+- Simplified Chinese
+- English
+- Japanese
+- Spanish
+
+## Support
+
+The current operational Support address is inherited from the shared development baseline and must match the actual `support.html`, `privacy.html`, `security.txt`, release materials, and App Store Connect values. Do not redefine the address in this README.
+
+## Repository structure
+
+- `index.html` — parent-facing home page and game library
+- `game.html` — game detail renderer
+- `support.html` — support and purchase restoration guidance
+- `privacy.html` — privacy policy
+- `404.html` — not-found page
+- `assets/app.js` — localization and game rendering
+- `assets/styles.css` — shared visual system
+- `assets/games.json` — game catalog
+- `assets/favicon.svg` — CuriousKite brand mark
+- `assets/curiouskite-logo.svg` — CuriousKite reusable site logo
+- `.well-known/security.txt` — security contact
+- `.nojekyll` — GitHub Pages static-site behavior
