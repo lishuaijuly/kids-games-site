@@ -33,9 +33,9 @@ Do not copy Drive metadata or unrelated `/ios游戏` files into the repository.
 ## Brand reference
 
 - Mother brand: **CuriousKite**
-- Logo: rounded semi-flat kite + exploration trail.
+- Logo: rounded blue “C” opening onto a warm path, green hills, and sunlight.
 - Canonical brand values are **not redefined in this README**. Use `/ios游戏/CURIOUSKITE_BRAND_GUIDE_CURRENT.md` and `/ios游戏/assets-source/_shared/CuriousKite/tokens/CURIOUSKITE_BRAND_TOKENS.json`; `assets/styles.css` must mirror those tokens exactly.
-- Website logo/favicons are copied from `/ios游戏/assets-source/_shared/CuriousKite/logo/CuriousKite-logo-mark.svg`; do not independently redraw them in this repository.
+- Website logo and favicon use the approved Curious Window raster assets in `assets/`; do not independently redraw them in this repository.
 - Approved value lines are not duplicated in this README. Runtime copy must match `/ios游戏/CURIOUSKITE_BRAND_GUIDE_CURRENT.md`; the Site Checklist/consistency script validates the public pages against that authority.
 
 ## Website role
@@ -63,7 +63,7 @@ The current operational Support address is inherited from the shared development
 - `assets/app.js` — localization and game rendering
 - `assets/styles.css` — shared visual system
 - `assets/games.json` — game catalog
-- `assets/favicon.svg` — CuriousKite brand mark
-- `assets/curiouskite-logo.svg` — CuriousKite reusable site logo
+- `assets/curiouskite-logo-horizontal.png` — approved horizontal website logo
+- `assets/curiouskite-logo-mark.png` — approved small-size brand mark and favicon
 - `.well-known/security.txt` — security contact
 - `.nojekyll` — GitHub Pages static-site behavior
