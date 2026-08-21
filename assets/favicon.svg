@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
-  <title>CuriousKite logo mark</title>
-  <path d="M256 68 C270 68 282 75 293 86 L394 187 C405 198 412 210 412 224 C412 238 405 250 394 261 L293 362 C282 373 270 380 256 380 C242 380 230 373 219 362 L118 261 C107 250 100 238 100 224 C100 210 107 198 118 187 L219 86 C230 75 242 68 256 68Z" fill="#3B93D1"/>
-  <path d="M256 68 C270 68 282 75 293 86 L394 187 C405 198 412 210 412 224 L256 224V68Z" fill="#F4C95D"/>
-  <path d="M100 224 C100 238 107 250 118 261 L219 362 C230 373 242 380 256 380V224H100Z" fill="#67B96F"/>
-  <circle cx="256" cy="224" r="13" fill="#F29B63"/>
-  <path d="M256 380 C250 408 230 421 205 429 C180 437 163 450 166 468" stroke="#F29B63" stroke-width="18" stroke-linecap="round"/>
-  <circle cx="166" cy="468" r="9" fill="#F4C95D"/>
-</svg>
