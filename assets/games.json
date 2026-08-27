@@ -1,1 +1,33 @@
-[]
+[
+  {
+    "id": "animal-puzzle-fun",
+    "status": "approved",
+    "age": "6–8",
+    "icon": "🧩",
+    "app_store_url": "",
+    "title": {
+      "zh": "动物拼拼乐",
+      "en": "Animal Puzzle Fun",
+      "ja": "どうぶつパズルあそび",
+      "es": "Puzles de animales"
+    },
+    "summary": {
+      "zh": "100 张原创动物场景，用大块拼图慢慢完成。",
+      "en": "A calm 100-scene animal jigsaw adventure with big pieces.",
+      "ja": "大きなピースで、100 のどうぶつの景色をゆっくり完成させるパズルです。",
+      "es": "Una tranquila aventura de 100 puzles de animales con piezas grandes."
+    },
+    "features": {
+      "zh": ["100 张原创动物场景", "点按或拖放大块拼图", "无广告、无账号、无限时"],
+      "en": ["100 original animal scenes", "Tap or drag big puzzle pieces", "No ads, accounts, or timers"],
+      "ja": ["100 のオリジナルどうぶつシーン", "大きなピースをタップまたはドラッグ", "広告・アカウント・時間制限なし"],
+      "es": ["100 escenas originales de animales", "Toca o arrastra piezas grandes", "Sin anuncios, cuentas ni límites de tiempo"]
+    },
+    "release_note": {
+      "zh": "已通过 App Review。Apple 商品页公开可检索后，这里会提供 App Store 链接。",
+      "en": "Approved by App Review. The App Store link will appear here when Apple’s product page is publicly available.",
+      "ja": "App Review を通過しました。Apple の商品ページが公開されたら、ここに App Store リンクを表示します。",
+      "es": "Aprobado por App Review. El enlace de App Store aparecerá aquí cuando la página del producto de Apple sea pública."
+    }
+  }
+]

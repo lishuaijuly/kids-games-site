@@ -14,7 +14,7 @@ Parent-facing website for the CuriousKite iPhone/iPad children's game series.
   - committed: 2026-08-17 04:39:52 UTC
   - this SHA is historical comparison evidence only; it does not make GitHub the upstream source
 - The Google Drive copy may intentionally be newer than GitHub. It is the **canonical manual-submit working source** for website content in this project.
-- Production `assets/games.json` contains **released games only**; planned/development games stay in internal project documents until formal release.
+- Production `assets/games.json` contains only **App Review approved or released games**. An approved game without a publicly resolvable App Store URL must use `status: approved` and a truthful pending-listing notice; planned/development games stay in internal project documents until formal release.
 - GitHub-only changes are treated as drift, not automatic upstream truth. They may be migrated back into Drive only after explicit developer confirmation.
 
 ## Update rule

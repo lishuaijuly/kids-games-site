@@ -185,6 +185,8 @@ async function renderGame(){
       <h2>App Store</h2>
       ${g.app_store_url
         ? `<a class="btn primary" href="${g.app_store_url}" target="_blank" rel="noopener">${t('在 App Store 查看','View on the App Store','App Store で見る','Ver en App Store')} ↗</a>`
+        : g.status === 'approved'
+          ? `<div class="release-box approved-release">${gv(g,'release_note')}</div>`
         : `<div class="release-box">${t(
             '此目录项缺少已确认的 App Store 链接，请暂勿发布该目录项。',
             'This catalog entry is missing a confirmed App Store link and should not be published yet.',

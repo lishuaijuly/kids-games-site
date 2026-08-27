@@ -99,7 +99,9 @@ section{padding:58px 0}
 .game-icon{width:62px;height:62px;border-radius:18px;display:grid;place-items:center;background:var(--brand-soft);font-size:30px}
 .badge{font-size:11px;font-weight:900;border-radius:999px;padding:6px 9px;background:#F1F4F6;color:var(--muted)}
 .badge-development{background:var(--yellow-soft);color:#8A6810}
+.badge-approved{background:#E4EFFA;color:#2D6F9D}
 .badge-released{background:var(--green-soft);color:#32743A}
+.approved-release{background:#F3F9FE;border-color:#B8D9F1;color:#285E86}
 .game-card h3{font-size:25px;margin:19px 0 8px;letter-spacing:-.025em}
 .game-card p{color:var(--muted);margin:0 0 18px}
 .chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:auto}
