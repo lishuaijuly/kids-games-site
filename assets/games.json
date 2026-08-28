@@ -3,6 +3,15 @@
     "id": "animal-puzzle-fun",
     "status": "released",
     "age": "6–8",
+    "locales": [
+      "en", "zh-Hans", "zh-Hant", "ja", "es", "de", "fr", "ko", "pt-BR", "it", "pl", "ru", "ar"
+    ],
+    "privacy": {
+      "data_collection": "none",
+      "tracking": "none",
+      "advertising": "none",
+      "child_accounts": "none"
+    },
     "app_store": {
       "id": "6804195627",
       "country": "us",

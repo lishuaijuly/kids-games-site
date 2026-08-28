@@ -4,6 +4,7 @@ import { join } from 'node:path';
 const appId = process.argv.find(value => /^\d{6,}$/.test(value));
 const countryIndex = process.argv.indexOf('--country');
 const country = countryIndex >= 0 ? process.argv[countryIndex + 1] : 'us';
+const defaultLocales = ['en', 'zh-Hans', 'zh-Hant', 'ja', 'es', 'de', 'fr', 'ko', 'pt-BR', 'it', 'pl', 'ru', 'ar'];
 const root = new URL('..', import.meta.url).pathname;
 const catalogPath = join(root, 'assets/games.json');
 if (!appId) throw new Error('Usage: node scripts/add-app-store-game.mjs <App Store ID> [--country us]');
@@ -18,7 +19,8 @@ const catalog = JSON.parse(readFileSync(catalogPath, 'utf8'));
 if (catalog.some(game => game.app_store?.id === appId || game.id === slug)) throw new Error(`APP_STORE_GAME_EXISTS: ${appId}`);
 
 catalog.push({
-  id: slug, status: 'released', age: '6–8',
+  id: slug, status: 'released', age: '6–8', locales: defaultLocales,
+  privacy: { data_collection: 'none', tracking: 'none', advertising: 'none', child_accounts: 'none' },
   app_store: { id: appId, country, store_name_en: app.trackName, store_description_en: app.description },
   artwork: { icon: `assets/${slug}-app-icon.jpg`, screenshots: [] },
   app_store_url: String(app.trackViewUrl).replace(/\?uo=4$/, ''),

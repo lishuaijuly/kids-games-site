@@ -26,6 +26,8 @@ for (const source of english) {
 }
 
 for (const game of games) {
+  if (game.age !== '6–8' || JSON.stringify(game.locales) !== JSON.stringify(locales)) missing.push(`${game.id}.product-defaults`);
+  if (Object.values(game.privacy ?? {}).some(value => value !== 'none') || Object.keys(game.privacy ?? {}).length !== 4) missing.push(`${game.id}.privacy-defaults`);
   for (const field of ['title', 'summary', 'features']) {
     for (const locale of locales) {
       const key = locale === 'zh-Hans' ? 'zh' : locale;
