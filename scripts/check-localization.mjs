@@ -15,6 +15,9 @@ for (const file of htmlFiles) {
 }
 
 const missing = [];
+for (const [source, values] of Object.entries(translations)) {
+  if (values.ar?.includes('。')) missing.push(`ar punctuation: ${source}`);
+}
 for (const source of english) {
   for (const locale of locales) {
     if (legacy[locale]) continue;
