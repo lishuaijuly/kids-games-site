@@ -25,6 +25,12 @@ body{
   font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   line-height:1.65;-webkit-font-smoothing:antialiased
 }
+html[dir="rtl"] body{text-align:right}
+html[dir="rtl"] .skip{left:auto;right:-9999px}
+html[dir="rtl"] .skip:focus{left:auto;right:12px}
+html[dir="rtl"] .support-link{direction:rtl}
+html[dir="rtl"] .arrow{transform:rotate(180deg)}
+html[dir="rtl"] .footer-links{justify-content:flex-start}
 a{color:inherit}
 img,svg{display:block;max-width:100%}
 .wrap{width:min(1160px,calc(100% - 40px));margin:0 auto}
@@ -91,22 +97,29 @@ section{padding:58px 0}
 .sub{color:var(--muted);max-width:760px;margin:0}
 .games{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .game-card{
-  display:flex;flex-direction:column;min-height:325px;text-decoration:none;padding:22px;border-radius:22px;
+  display:grid;grid-template-columns:118px minmax(0,1fr);gap:18px;min-height:232px;text-decoration:none;padding:18px;border-radius:22px;
   border:1px solid var(--line);background:#fff;box-shadow:0 7px 24px rgba(16,35,49,.04);transition:.18s ease
 }
+.game-card-art{height:118px;border-radius:22px;overflow:hidden;background:var(--brand-soft);display:grid;place-items:center}
+.game-card-content{display:flex;flex-direction:column;min-width:0}
 .game-card:hover{transform:translateY(-3px);box-shadow:0 18px 46px rgba(16,35,49,.09)}
 .game-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
 .game-icon{width:62px;height:62px;border-radius:18px;display:grid;place-items:center;background:var(--brand-soft);font-size:30px}
+.game-artwork{width:100%;height:100%;object-fit:cover;border-radius:18px}
+.game-card-art .game-artwork,.game-detail-art .game-artwork{border-radius:0}
+.age-chip{font-size:11px;font-weight:800;color:var(--brand-action);background:var(--brand-soft);border-radius:999px;padding:6px 9px;white-space:nowrap}
 .badge{font-size:11px;font-weight:900;border-radius:999px;padding:6px 9px;background:#F1F4F6;color:var(--muted)}
 .badge-development{background:var(--yellow-soft);color:#8A6810}
 .badge-approved{background:#E4EFFA;color:#2D6F9D}
 .badge-released{background:var(--green-soft);color:#32743A}
 .approved-release{background:#F3F9FE;border-color:#B8D9F1;color:#285E86}
 .game-card h3{font-size:25px;margin:19px 0 8px;letter-spacing:-.025em}
+.game-card-content h3{margin:12px 0 6px}
 .game-card p{color:var(--muted);margin:0 0 18px}
 .chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:auto}
 .chip{font-size:11px;padding:5px 8px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);color:var(--muted)}
 .game-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:20px;padding-top:15px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+.game-card-content .game-foot{margin-top:auto;padding-top:12px}
 .details{color:var(--brand-action);font-weight:800}
 
 .benefit-section{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -149,6 +162,12 @@ section{padding:58px 0}
 .feature-list li{border:1px solid var(--line);background:var(--surface-2);border-radius:14px;padding:12px 14px}
 .meta{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
 .meta span{font-size:12px;border-radius:999px;padding:7px 10px;background:var(--brand-soft);color:var(--brand-action);font-weight:800}
+.game-detail-hero{display:grid;grid-template-columns:150px minmax(0,1fr);gap:26px;align-items:center;margin:22px 0 8px}
+.game-detail-art{width:150px;height:150px;border-radius:34px;overflow:hidden;background:var(--brand-soft);box-shadow:0 12px 28px rgba(16,35,49,.12)}
+.game-detail-hero h1{margin:12px 0 10px}
+.game-screenshots{display:flex;gap:12px;overflow-x:auto;padding:4px 0 10px}
+.game-screenshots img{max-height:280px;width:auto;border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 22px rgba(16,35,49,.08)}
+.game-support-link{margin-top:20px}
 
 footer{border-top:1px solid var(--line);padding:28px 0 38px;color:var(--muted);font-size:13px}
 .footer-row{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}
@@ -173,6 +192,11 @@ footer{border-top:1px solid var(--line);padding:28px 0 38px;color:var(--muted);f
   .hero h1{font-size:43px}
   section{padding:42px 0}
   .games,.benefits,.standards,.info-grid,.privacy-grid,.feature-list{grid-template-columns:1fr}
+  .game-card{grid-template-columns:92px minmax(0,1fr);gap:14px;padding:14px;min-height:0}
+  .game-card-art{height:92px;border-radius:18px}
+  .game-card h3{font-size:21px}
+  .game-detail-hero{grid-template-columns:1fr;gap:18px}
+  .game-detail-art{width:116px;height:116px;border-radius:28px}
   .section-head{align-items:flex-start;flex-direction:column}
   .support-panel,.page-card{border-radius:21px}
   .footer-row{flex-direction:column}

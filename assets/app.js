@@ -1,5 +1,21 @@
-const LANGS = ['zh','en','ja','es'];
+const LANGS = ['en','zh-Hans','zh-Hant','ja','es','de','fr','ko','pt-BR','it','pl','ru','ar'];
+const LOCALES = {
+  en: { name: 'English', htmlLang: 'en', direction: 'ltr', dataKey: 'en' },
+  'zh-Hans': { name: '简体中文', htmlLang: 'zh-Hans', direction: 'ltr', dataKey: 'zh' },
+  'zh-Hant': { name: '繁體中文', htmlLang: 'zh-Hant', direction: 'ltr' },
+  ja: { name: '日本語', htmlLang: 'ja', direction: 'ltr', dataKey: 'ja' },
+  es: { name: 'Español', htmlLang: 'es', direction: 'ltr', dataKey: 'es' },
+  de: { name: 'Deutsch', htmlLang: 'de', direction: 'ltr' },
+  fr: { name: 'Français', htmlLang: 'fr', direction: 'ltr' },
+  ko: { name: '한국어', htmlLang: 'ko', direction: 'ltr' },
+  'pt-BR': { name: 'Português (Brasil)', htmlLang: 'pt-BR', direction: 'ltr' },
+  it: { name: 'Italiano', htmlLang: 'it', direction: 'ltr' },
+  pl: { name: 'Polski', htmlLang: 'pl', direction: 'ltr' },
+  ru: { name: 'Русский', htmlLang: 'ru', direction: 'ltr' },
+  ar: { name: 'العربية', htmlLang: 'ar', direction: 'rtl' }
+};
 const supportEmail = 'animalgames.kids@outlook.com';
+let translations = {};
 
 function detectLanguage() {
   const saved = localStorage.getItem('siteLang');
@@ -9,10 +25,19 @@ function detectLanguage() {
     : [navigator.language || 'en'];
   for (const raw of preferred) {
     const lang = String(raw).toLowerCase();
-    if (lang.startsWith('zh')) return 'zh';
+    if (lang.startsWith('zh-hant') || lang.startsWith('zh-tw') || lang.startsWith('zh-hk')) return 'zh-Hant';
+    if (lang.startsWith('zh')) return 'zh-Hans';
     if (lang.startsWith('ja')) return 'ja';
     if (lang.startsWith('es')) return 'es';
     if (lang.startsWith('en')) return 'en';
+    if (lang.startsWith('de')) return 'de';
+    if (lang.startsWith('fr')) return 'fr';
+    if (lang.startsWith('ko')) return 'ko';
+    if (lang.startsWith('pt')) return 'pt-BR';
+    if (lang.startsWith('it')) return 'it';
+    if (lang.startsWith('pl')) return 'pl';
+    if (lang.startsWith('ru')) return 'ru';
+    if (lang.startsWith('ar')) return 'ar';
   }
   return 'en';
 }
@@ -53,22 +78,38 @@ const pageMeta = {
 };
 
 function t(zh,en,ja,es){
-  return state.lang === 'zh' ? zh : state.lang === 'ja' ? ja : state.lang === 'es' ? es : en;
+  const legacyKey = LOCALES[state.lang]?.dataKey;
+  if (legacyKey === 'zh') return zh;
+  if (legacyKey === 'ja') return ja;
+  if (legacyKey === 'es') return es;
+  return translate(en);
+}
+function translate(english){
+  return translations[english]?.[state.lang] ?? english;
 }
 function gv(g, field){
-  const flatValue = g[`${field}_${state.lang}`] ?? g[`${field}_en`] ?? g[`${field}_zh`];
+  const localeKey = LOCALES[state.lang]?.dataKey ?? state.lang;
+  const flatValue = g[`${field}_${localeKey}`] ?? g[`${field}_en`] ?? g[`${field}_zh`];
   if (flatValue != null) return flatValue;
 
   const value = g[field];
   if (value && typeof value === 'object') {
-    return value[state.lang] ?? value.en ?? value.zh;
+    return value[localeKey] ?? value[state.lang] ?? value.en ?? value.zh;
   }
   return value;
 }
 
+function gameIcon(g){
+  const src = g.artwork?.icon ?? g.icon_url;
+  return src
+    ? `<img class="game-artwork" src="${src}" alt=""/>`
+    : g.icon ?? '🧩';
+}
+
 function applyStaticText(){
   document.querySelectorAll('[data-zh]').forEach(el => {
-    const value = el.dataset[state.lang] ?? el.dataset.en ?? el.dataset.zh;
+    const legacyKey = LOCALES[state.lang]?.dataKey;
+    const value = legacyKey ? el.dataset[legacyKey] : translate(el.dataset.en);
     if (value != null) el.textContent = value;
   });
   document.querySelectorAll('[data-support-mail]').forEach(el => {
@@ -76,19 +117,28 @@ function applyStaticText(){
     if (el.tagName === 'A') el.href = `mailto:${supportEmail}`;
   });
   const select = document.getElementById('langSelect');
-  if (select) select.value = state.lang;
-  document.documentElement.lang =
-    state.lang === 'zh' ? 'zh-CN' :
-    state.lang === 'ja' ? 'ja-JP' :
-    state.lang === 'es' ? 'es' : 'en';
+  if (select) {
+    select.innerHTML = LANGS.map(code => `<option value="${code}">${LOCALES[code].name}</option>`).join('');
+    select.value = state.lang;
+  }
+  document.documentElement.lang = LOCALES[state.lang].htmlLang;
+  document.documentElement.dir = LOCALES[state.lang].direction;
 
   const page = document.body?.dataset.page;
-  const meta = pageMeta[page]?.[state.lang];
+  const meta = pageMeta[page]?.[LOCALES[state.lang]?.dataKey] ?? pageMeta[page]?.en;
   if (meta){
-    document.title = meta[0];
+    const text = LOCALES[state.lang]?.dataKey ? meta[0] : translate(meta[0]);
+    const description = LOCALES[state.lang]?.dataKey ? meta[1] : translate(meta[1]);
+    document.title = text;
     const desc = document.querySelector('meta[name="description"]');
-    if (desc) desc.setAttribute('content', meta[1]);
+    if (desc) desc.setAttribute('content', description);
   }
+}
+
+async function loadTranslations(){
+  const res = await fetch('assets/translations.json', {cache:'no-store'});
+  if (!res.ok) throw new Error(`translations.json ${res.status}`);
+  translations = await res.json();
 }
 
 async function loadGames(){
@@ -100,16 +150,16 @@ async function loadGames(){
 function card(g){
   const fs = (gv(g,'features') || []).slice(0,2);
   return `<a class="game-card" href="game.html?id=${encodeURIComponent(g.id)}">
-    <div class="game-top">
-      <div class="game-icon" aria-hidden="true">${g.icon}</div>
-      <span class="badge badge-${g.status}">${gv(g,'status')}</span>
-    </div>
-    <h3>${gv(g,'title')}</h3>
-    <p>${gv(g,'summary')}</p>
-    <div class="chips">${fs.map(x=>`<span class="chip">${x}</span>`).join('')}</div>
-    <div class="game-foot">
-      <span>${t('适合','Ages','対象年齢','Edades')} ${g.age}</span>
-      <span class="details">${t('查看详情','Details','詳細を見る','Detalles')} →</span>
+    <div class="game-card-art" aria-hidden="true">${gameIcon(g)}</div>
+    <div class="game-card-content">
+      <div class="game-top">
+        <span class="badge badge-${g.status}">${gv(g,'status')}</span>
+        <span class="age-chip">${t('适合年龄','Ages','対象年齢','Edades')} ${g.age}</span>
+      </div>
+      <h3>${gv(g,'title')}</h3>
+      <p>${gv(g,'summary')}</p>
+      <div class="chips">${fs.map(x=>`<span class="chip">${x}</span>`).join('')}</div>
+      <div class="game-foot"><span class="details">${t('查看详情','Details','詳細を見る','Detalles')} →</span></div>
     </div>
   </a>`;
 }
@@ -174,21 +224,24 @@ async function renderGame(){
     }
     const fs = gv(g,'features') || [];
     document.title = `${gv(g,'title')} | CuriousKite`;
-    el.innerHTML = `<article class="page-card">
+    const screenshots = g.artwork?.screenshots ?? [];
+    el.innerHTML = `<article class="page-card game-detail-card">
       <a class="breadcrumb" href="index.html#games">← ${t('返回全部游戏','Back to games','ゲーム一覧に戻る','Volver a los juegos')}</a>
-      <div class="game-top" style="margin-top:22px">
-        <div class="game-icon">${g.icon}</div>
-        <span class="badge badge-${g.status}">${gv(g,'status')}</span>
+      <div class="game-detail-hero">
+        <div class="game-detail-art" aria-hidden="true">${gameIcon(g)}</div>
+        <div>
+          <div class="game-top"><span class="badge badge-${g.status}">${gv(g,'status')}</span><span class="age-chip">${t('适合年龄','Ages','対象年齢','Edades')} ${g.age}</span></div>
+          <h1>${gv(g,'title')}</h1>
+          <p class="lead">${gv(g,'summary')}</p>
+        </div>
       </div>
-      <h1>${gv(g,'title')}</h1>
-      <p class="lead">${gv(g,'summary')}</p>
       <div class="meta">
-        <span>${t('适合年龄','Ages','対象年齢','Edades')} ${g.age}</span>
         <span>${t('无广告','No ads','広告なし','Sin anuncios')}</span>
         <span>${t('无订阅','No subscriptions','サブスクリプションなし','Sin suscripciones')}</span>
       </div>
       <h2>${t('核心特点','Key features','主な特徴','Características principales')}</h2>
       <ul class="feature-list">${fs.map(x=>`<li>✓ ${x}</li>`).join('')}</ul>
+      ${screenshots.length ? `<div class="game-screenshots">${screenshots.map((src, index) => `<img src="${src}" alt="${gv(g,'title')} ${t('游戏截图','game screenshot','ゲーム画面','captura del juego')} ${index + 1}" loading="lazy"/>`).join('')}</div>` : ''}
       <h2>App Store</h2>
       ${g.app_store_url
         ? `<a class="btn primary" href="${g.app_store_url}" target="_blank" rel="noopener">${t('在 App Store 查看','View on the App Store','App Store で見る','Ver en App Store')} ↗</a>`
@@ -201,6 +254,7 @@ async function renderGame(){
             'Esta entrada no tiene un enlace confirmado de App Store y todavía no debe publicarse.'
           )}</div>`
       }
+      <p class="game-support-link"><a class="text-link" href="${g.support_url ?? 'support.html'}">${t('需要帮助？前往支持中心','Need help? Visit Support Center','サポートが必要ですか？サポートセンターへ','¿Necesitas ayuda? Visita el centro de soporte')}</a></p>
     </article>`;
   }catch{
     el.innerHTML = `<div class="page-card"><p>${t('游戏信息暂时无法加载。','Game information is temporarily unavailable.','ゲーム情報を読み込めません。','La información del juego no está disponible temporalmente.')}</p></div>`;
@@ -208,6 +262,7 @@ async function renderGame(){
 }
 
 async function refresh(){
+  await loadTranslations();
   applyStaticText();
   await Promise.all([renderHome(),renderGame()]);
 }

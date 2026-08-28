@@ -1,0 +1,43 @@
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
+import { join } from 'node:path';
+
+const root = new URL('..', import.meta.url).pathname;
+const locales = ['en', 'zh-Hans', 'zh-Hant', 'ja', 'es', 'de', 'fr', 'ko', 'pt-BR', 'it', 'pl', 'ru', 'ar'];
+const legacy = { 'zh-Hans': 'zh', ja: 'ja', es: 'es', en: 'en' };
+const translations = JSON.parse(readFileSync(join(root, 'assets/translations.json'), 'utf8'));
+const games = JSON.parse(readFileSync(join(root, 'assets/games.json'), 'utf8'));
+const htmlFiles = readdirSync(root).filter(name => name.endsWith('.html'));
+const english = new Set();
+
+for (const file of htmlFiles) {
+  const html = readFileSync(join(root, file), 'utf8');
+  for (const match of html.matchAll(/data-en="([^"]*)"/g)) english.add(match[1]);
+}
+
+const missing = [];
+for (const source of english) {
+  for (const locale of locales) {
+    if (legacy[locale]) continue;
+    if (!translations[source]?.[locale]) missing.push(`${locale}: ${source}`);
+  }
+}
+
+for (const game of games) {
+  for (const field of ['title', 'summary', 'features']) {
+    for (const locale of locales) {
+      const key = locale === 'zh-Hans' ? 'zh' : locale;
+      if (!game[field]?.[key]) missing.push(`${game.id}.${field}.${key}`);
+    }
+  }
+  if (!game.artwork?.icon || !existsSync(join(root, game.artwork.icon))) missing.push(`${game.id}.artwork.icon`);
+  for (const screenshot of game.artwork?.screenshots ?? []) {
+    if (!existsSync(join(root, screenshot))) missing.push(`${game.id}.artwork.screenshots: ${screenshot}`);
+  }
+}
+
+if (missing.length) {
+  console.error(`LOCALIZATION_MISSING (${missing.length})`);
+  console.error(missing.join('\n'));
+  process.exit(1);
+}
+console.log(`LOCALIZATION_PASS: ${english.size} static strings × ${locales.length} locales; ${games.length} game records`);
