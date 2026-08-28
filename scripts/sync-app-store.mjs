@@ -32,6 +32,7 @@ for (const game of catalog) {
   game.artwork.icon ??= `assets/${slug}-app-icon.jpg`;
   game.artwork.screenshots = screenshots.map((_, index) => `assets/${slug}-screenshot-${String(index + 1).padStart(2, '0')}.jpg`);
   game.app_store.last_synced = new Date().toISOString();
+  game.app_store.store_name_en = app.trackName;
   game.app_store.store_description_en = app.description;
 
   console.log(`${game.id}: ${app.trackName} (${screenshots.length} screenshots)`);

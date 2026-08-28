@@ -2,18 +2,22 @@
 
 `assets/games.json` 是游戏卡片和详情页的唯一游戏数据来源。页面不得为某个游戏写专用分支。
 
-每个游戏对象必须包含稳定 `id`、`status`、`age`、`app_store`、`artwork`、本地化 `title` / `summary` / `features` 和 `support_url`。`artwork.icon` 与 `artwork.screenshots` 使用从 App Store 公开商品页同步到 `assets/` 的本地副本。
+## 给一个 App ID 时的流程
 
-新增游戏：添加一个完整对象，下载官方图标和截图，填入 13 种语言的文本。发布后的 `id` 不得修改，详情页链接为 `game.html?id=<id>`。
+公开上架后，只需提供 App Store ID（例如 `6804195627`）：
 
-App Store 同步记录：
-
-```json
-"app_store": { "id": "6804195627", "country": "us" },
-"artwork": {
-  "icon": "assets/animal-puzzle-fun-app-icon.jpg",
-  "screenshots": ["assets/animal-puzzle-fun-iphone-01.jpg"]
-}
+```sh
+node scripts/add-app-store-game.mjs <APP_ID> --country us
+node scripts/sync-app-store.mjs --write
+node scripts/check-localization.mjs
 ```
 
-同步仅可覆盖官方图标、截图、商店 URL 和英文 App Store 文案候选值。其他 locale、站点支持链接与隐私文案必须通过本地化审校后更新。
+第一步从 Apple 公开 lookup 读取商品名称、说明、商品页 URL、图标和截图来源，并创建目录项。第二步下载官方媒体、写入同步时间与最新英文商店文案。页面自动使用这些字段；新增游戏不需要改 HTML 或 JavaScript。
+
+默认采用本产品线的年龄 `6–8`、`released` 状态和统一支持页。只有该 App 在指定 storefront 不公开、年龄范围不同、支持页/隐私实践不同，或需要不同详情页 ID 时，才需要开发者补充信息。
+
+## 数据约定
+
+每个游戏对象包含稳定 `id`、`status`、`age`、`app_store`、`artwork` 和 `support_url`。游戏内容文案以 App Store 同步的英文来源为准；网站壳层、支持和隐私文案维持 13 语言审校。`artwork.icon` 与 `artwork.screenshots` 是 App Store 媒体在 `assets/` 的本地副本。
+
+发布后的 `id` 不得修改，详情页链接为 `game.html?id=<id>`。
