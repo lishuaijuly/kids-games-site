@@ -15,6 +15,7 @@ for (const file of htmlFiles) {
 }
 
 const missing = [];
+const fixedLevelTotal = /(^|\D)100(\D|$)/;
 for (const [source, values] of Object.entries(translations)) {
   if (values.ar?.includes('。')) missing.push(`ar punctuation: ${source}`);
 }
@@ -33,6 +34,13 @@ for (const game of games) {
       const key = locale === 'zh-Hans' ? 'zh' : locale;
       if (!game[field]?.[key]) missing.push(`${game.id}.${field}.${key}`);
     }
+  }
+  const publicDiscoveryCopy = {
+    summary: game.summary,
+    features: game.features
+  };
+  if (fixedLevelTotal.test(JSON.stringify(publicDiscoveryCopy))) {
+    missing.push(`${game.id}.public-copy-fixed-level-total`);
   }
   if (!game.artwork?.icon || !existsSync(join(root, game.artwork.icon))) missing.push(`${game.id}.artwork.icon`);
   for (const screenshot of game.artwork?.screenshots ?? []) {

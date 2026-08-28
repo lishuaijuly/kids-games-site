@@ -12,7 +12,7 @@ node scripts/sync-app-store.mjs --write
 node scripts/check-localization.mjs
 ```
 
-第一步从 Apple 公开 lookup 读取商品名称、说明、商品页 URL、图标和截图来源，并创建目录项。第二步下载官方媒体、写入同步时间与最新英文商店文案。页面自动使用这些字段；新增游戏不需要改 HTML 或 JavaScript。
+第一步从 Apple 公开 lookup 读取商品名称、说明、商品页 URL、图标和截图来源，并创建目录草稿。第二步下载官方媒体并写入同步时间。商店说明仅用于生成新增游戏的英文摘要草稿，不作为长期重复数据保存；目录公开文案由 `summary` 与 `features` 的 13 语言字段统一管理。新增游戏不需要改 HTML 或 JavaScript。
 
 默认采用本产品线的年龄 `6–8`、`released` 状态、13 种语言（`en`、`zh-Hans`、`zh-Hant`、`ja`、`es`、`de`、`fr`、`ko`、`pt-BR`、`it`、`pl`、`ru`、`ar`）和统一支持页。只有该 App 在指定 storefront 不公开、年龄范围不同、支持页/隐私实践不同，或需要不同详情页 ID 时，才需要开发者补充信息。
 
@@ -20,6 +20,6 @@ node scripts/check-localization.mjs
 
 ## 数据约定
 
-每个游戏对象包含稳定 `id`、`status`、`age`、`locales`、`privacy`、`app_store`、`artwork` 和 `support_url`。游戏内容文案以 App Store 同步的英文来源为准；网站壳层、支持和隐私文案维持 13 语言审校。`artwork.icon` 与 `artwork.screenshots` 是 App Store 媒体在 `assets/` 的本地副本。
+每个游戏对象包含稳定 `id`、`status`、`age`、`locales`、`privacy`、`app_store`、`artwork` 和 `support_url`。`app_store` 只保存稳定 ID、storefront、同步时间和商品名，不重复缓存整段商店说明。网站公开的 `summary` 与 `features` 必须完成 13 语言审校，并通过固定关卡总数检查；不得把当前内容总量写成长期产品承诺。`artwork.icon` 与 `artwork.screenshots` 是 App Store 媒体在 `assets/` 的本地副本。
 
 发布后的 `id` 不得修改，详情页链接为 `game.html?id=<id>`。

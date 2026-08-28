@@ -21,7 +21,7 @@ if (catalog.some(game => game.app_store?.id === appId || game.id === slug)) thro
 catalog.push({
   id: slug, status: 'released', age: '6–8', locales: defaultLocales,
   privacy: { data_collection: 'none', tracking: 'none', advertising: 'none', child_accounts: 'none' },
-  app_store: { id: appId, country, store_name_en: app.trackName, store_description_en: app.description },
+  app_store: { id: appId, country, store_name_en: app.trackName },
   artwork: { icon: `assets/${slug}-app-icon.jpg`, screenshots: [] },
   app_store_url: String(app.trackViewUrl).replace(/\?uo=4$/, ''),
   title: { en: app.trackName }, summary: { en: String(app.description ?? '').split(/\n\s*\n/)[0].trim() }, features: { en: [] }, support_url: 'support.html'

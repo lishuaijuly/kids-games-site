@@ -2,7 +2,7 @@
 
 Status: `AI_MULTIPASS_REVIEWED`
 
-Scope: website chrome and the parent-facing home, support, privacy, 404 and game-detail UI. Game-specific App Store copy is not reviewed here; it is synchronized separately from its App Store source.
+Scope: website chrome and the parent-facing home, support, privacy, 404 and game-detail UI, including each game's localized `summary` and `features`. Full App Store descriptions remain governed by each app release and are not duplicated into the website catalog.
 
 Source intent and risk review:
 
