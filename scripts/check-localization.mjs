@@ -15,7 +15,20 @@ for (const file of htmlFiles) {
 }
 
 const missing = [];
-const fixedLevelTotal = /(^|\D)100(\D|$)/;
+const fixedInventoryWords = /\bone[\s-]+hundred\b|\bcien(?:to)?\b|(?:ein)?hundert|cento|\bcent\b|\bcem\b|\bsto\b|\bсто\b|(?:百|백|مائة|مئة)/i;
+
+function hasFixedInventoryTotal(value) {
+  const normalizedDigits = value.replace(/[０-９٠-٩۰-۹]/g, digit => {
+    const code = digit.codePointAt(0);
+    if (code >= 0xFF10 && code <= 0xFF19) return String(code - 0xFF10);
+    if (code >= 0x0660 && code <= 0x0669) return String(code - 0x0660);
+    return String(code - 0x06F0);
+  });
+  // Small numbers may truthfully describe a mechanic (for example 2 turns or
+  // a 3×3 board). Larger inventory counts are release data, not durable copy.
+  const hasLargeNumber = [...normalizedDigits.matchAll(/\d+/g)].some(match => Number(match[0]) >= 21);
+  return hasLargeNumber || fixedInventoryWords.test(value);
+}
 for (const [source, values] of Object.entries(translations)) {
   if (values.ar?.includes('。')) missing.push(`ar punctuation: ${source}`);
 }
@@ -39,7 +52,7 @@ for (const game of games) {
     summary: game.summary,
     features: game.features
   };
-  if (fixedLevelTotal.test(JSON.stringify(publicDiscoveryCopy))) {
+  if (hasFixedInventoryTotal(JSON.stringify(publicDiscoveryCopy))) {
     missing.push(`${game.id}.public-copy-fixed-level-total`);
   }
   if (!game.artwork?.icon || !existsSync(join(root, game.artwork.icon))) missing.push(`${game.id}.artwork.icon`);

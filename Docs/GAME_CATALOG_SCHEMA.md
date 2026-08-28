@@ -20,6 +20,6 @@ node scripts/check-localization.mjs
 
 ## 数据约定
 
-每个游戏对象包含稳定 `id`、`status`、`age`、`locales`、`privacy`、`app_store`、`artwork` 和 `support_url`。`app_store` 只保存稳定 ID、storefront、同步时间和商品名，不重复缓存整段商店说明。网站公开的 `summary` 与 `features` 必须完成 13 语言审校，并通过固定关卡总数检查；不得把当前内容总量写成长期产品承诺。`artwork.icon` 与 `artwork.screenshots` 是 App Store 媒体在 `assets/` 的本地副本。
+每个游戏对象包含稳定 `id`、`status`、`age`、`locales`、`privacy`、`app_store`、`artwork` 和 `support_url`。`app_store` 只保存稳定 ID、storefront、同步时间和商品名，不重复缓存整段商店说明。网站公开的 `summary` 与 `features` 必须完成 13 语言审校，并通过固定内容总量检查；可以描述 `2` 次转弯、`3×3` 棋盘等小型玩法数字，但不得把 `100`、`120` 或其他当前内容总量写成长期产品承诺。`artwork.icon` 与 `artwork.screenshots` 是 App Store 媒体在 `assets/` 的本地副本。
 
 发布后的 `id` 不得修改，详情页链接为 `game.html?id=<id>`。
