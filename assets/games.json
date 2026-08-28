@@ -1,10 +1,10 @@
 [
   {
     "id": "animal-puzzle-fun",
-    "status": "approved",
+    "status": "released",
     "age": "6–8",
     "icon": "🧩",
-    "app_store_url": "",
+    "app_store_url": "https://apps.apple.com/us/app/animal-puzzle-fun/id6804195627",
     "title": {
       "zh": "动物拼拼乐",
       "en": "Animal Puzzle Fun",
@@ -24,10 +24,10 @@
       "es": ["100 escenas originales de animales", "Toca o arrastra piezas grandes", "Sin anuncios, cuentas ni límites de tiempo"]
     },
     "release_note": {
-      "zh": "已通过 App Review。Apple 商品页公开可检索后，这里会提供 App Store 链接。",
-      "en": "Approved by App Review. The App Store link will appear here when Apple’s product page is publicly available.",
-      "ja": "App Review を通過しました。Apple の商品ページが公開されたら、ここに App Store リンクを表示します。",
-      "es": "Aprobado por App Review. El enlace de App Store aparecerá aquí cuando la página del producto de Apple sea pública."
+      "zh": "现已在 App Store 上架。",
+      "en": "Now available on the App Store.",
+      "ja": "App Store で配信中です。",
+      "es": "Ya disponible en el App Store."
     }
   }
 ]
