@@ -56,7 +56,14 @@ function t(zh,en,ja,es){
   return state.lang === 'zh' ? zh : state.lang === 'ja' ? ja : state.lang === 'es' ? es : en;
 }
 function gv(g, field){
-  return g[`${field}_${state.lang}`] ?? g[`${field}_en`] ?? g[`${field}_zh`];
+  const flatValue = g[`${field}_${state.lang}`] ?? g[`${field}_en`] ?? g[`${field}_zh`];
+  if (flatValue != null) return flatValue;
+
+  const value = g[field];
+  if (value && typeof value === 'object') {
+    return value[state.lang] ?? value.en ?? value.zh;
+  }
+  return value;
 }
 
 function applyStaticText(){
