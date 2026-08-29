@@ -139,5 +139,148 @@
       "ar": "متاح الآن على App Store."
     },
     "support_url": "support.html"
+  },
+  {
+    "id": "animal-spot-difference",
+    "status": "released",
+    "age": "6–8",
+    "locales": [
+      "en", "zh-Hans", "zh-Hant", "ja", "es", "de", "fr", "ko", "pt-BR", "it", "pl", "ru", "ar"
+    ],
+    "privacy": {
+      "data_collection": "none",
+      "tracking": "none",
+      "advertising": "none",
+      "child_accounts": "none"
+    },
+    "app_store": {
+      "id": "6804242780",
+      "country": "us",
+      "store_name_en": "Animal Spot Difference",
+      "last_synced": "2026-08-29T12:28:58.708Z"
+    },
+    "artwork": {
+      "icon": "assets/animal-spot-difference-app-icon.jpg",
+      "screenshots": [
+        "assets/animal-spot-difference-screenshot-01.jpg",
+        "assets/animal-spot-difference-screenshot-02.jpg",
+        "assets/animal-spot-difference-screenshot-03.jpg",
+        "assets/animal-spot-difference-screenshot-04.jpg"
+      ]
+    },
+    "app_store_url": "https://apps.apple.com/us/app/animal-spot-difference/id6804242780",
+    "title": {
+      "zh": "动物找不同",
+      "en": "Animal Spot Difference",
+      "zh-Hant": "動物找不同",
+      "ja": "どうぶつまちがいさがし",
+      "es": "Diferencias de animales",
+      "de": "Tierische Fehlersuche",
+      "fr": "Différences avec les animaux",
+      "ko": "동물 틀린 그림 찾기",
+      "pt-BR": "Jogo dos erros com animais",
+      "it": "Trova le differenze con gli animali",
+      "pl": "Zwierzęce różnice",
+      "ru": "Найди отличия с животными",
+      "ar": "اكتشف الفروق مع الحيوانات"
+    },
+    "summary": {
+      "zh": "在欢乐的动物场景中，轻松寻找两幅图里的不同之处。",
+      "en": "A calm spot-the-difference adventure with cheerful animal scenes to explore.",
+      "zh-Hant": "在歡樂的動物場景中，輕鬆尋找兩幅圖裡的不同之處。",
+      "ja": "楽しいどうぶつの絵を見くらべて、ちがいをゆっくり見つけるゲームです。",
+      "es": "Una tranquila aventura de encontrar diferencias en alegres escenas de animales.",
+      "de": "Ein ruhiges Fehlersuchabenteuer mit fröhlichen Tierszenen.",
+      "fr": "Un jeu calme pour trouver les différences dans de joyeuses scènes d’animaux.",
+      "ko": "즐거운 동물 그림을 차분히 비교하며 다른 점을 찾는 모험이에요.",
+      "pt-BR": "Uma aventura tranquila de encontrar diferenças em cenas alegres de animais.",
+      "it": "Un tranquillo gioco trova le differenze con allegre scene di animali.",
+      "pl": "Spokojna zabawa w szukanie różnic na radosnych scenach ze zwierzętami.",
+      "ru": "Спокойная игра на поиск отличий в ярких сценах с животными.",
+      "ar": "مغامرة هادئة لاكتشاف الفروق في مشاهد حيوانات مبهجة."
+    },
+    "features": {
+      "zh": [
+        "对比两幅动物图，找出变化",
+        "温和提示和清晰的关卡地图",
+        "无广告、无账号、无计时压力"
+      ],
+      "en": [
+        "Compare two animal pictures and spot what changed",
+        "Gentle hints and a clear level map",
+        "No ads, accounts, timers, or pressure"
+      ],
+      "zh-Hant": [
+        "比較兩幅動物圖，找出變化",
+        "溫和提示和清楚的關卡地圖",
+        "無廣告、無帳號、無計時壓力"
+      ],
+      "ja": [
+        "2枚のどうぶつ絵を見くらべてちがいを発見",
+        "やさしいヒントと分かりやすいステージマップ",
+        "広告・アカウント・時間制限なし"
+      ],
+      "es": [
+        "Compara dos imágenes de animales y descubre qué cambió",
+        "Ayudas cuando hacen falta y un mapa de niveles claro",
+        "Sin anuncios, cuentas, temporizadores ni presión"
+      ],
+      "de": [
+        "Zwei Tierbilder vergleichen und Änderungen entdecken",
+        "Sanfte Hinweise und eine übersichtliche Levelkarte",
+        "Keine Werbung, Konten, Timer oder Zeitdruck"
+      ],
+      "fr": [
+        "Comparez deux images d’animaux et repérez les changements",
+        "Des indices tout en douceur et une carte des niveaux claire",
+        "Sans publicité, compte, chronomètre ni pression"
+      ],
+      "ko": [
+        "두 동물 그림을 비교하고 달라진 곳 찾기",
+        "부드러운 힌트와 알기 쉬운 레벨 지도",
+        "광고, 계정, 타이머, 부담 없음"
+      ],
+      "pt-BR": [
+        "Compare duas imagens de animais e descubra o que mudou",
+        "Dicas gentis e um mapa de níveis claro",
+        "Sem anúncios, contas, cronômetros ou pressão"
+      ],
+      "it": [
+        "Confronta due immagini di animali e scopri cosa è cambiato",
+        "Indizi discreti e una mappa dei livelli chiara",
+        "Senza pubblicità, account, timer o pressioni"
+      ],
+      "pl": [
+        "Porównuj dwa obrazki ze zwierzętami i znajdź zmiany",
+        "Łagodne podpowiedzi i czytelna mapa poziomów",
+        "Bez reklam, kont, liczników czasu i presji"
+      ],
+      "ru": [
+        "Сравнивайте две картинки с животными и находите изменения",
+        "Мягкие подсказки и понятная карта уровней",
+        "Без рекламы, аккаунтов, таймеров и давления"
+      ],
+      "ar": [
+        "قارن بين صورتي حيوانات واكتشف ما تغيّر",
+        "تلميحات لطيفة وخريطة مراحل واضحة",
+        "بلا إعلانات أو حسابات أو مؤقتات أو ضغط"
+      ]
+    },
+    "release_note": {
+      "zh": "现已在 App Store 上架。",
+      "en": "Now available on the App Store.",
+      "zh-Hant": "現已在 App Store 上架。",
+      "ja": "App Store で配信中です。",
+      "es": "Ya disponible en el App Store.",
+      "de": "Jetzt im App Store erhältlich.",
+      "fr": "Disponible dès maintenant sur l’App Store.",
+      "ko": "App Store에서 지금 이용할 수 있어요.",
+      "pt-BR": "Já disponível na App Store.",
+      "it": "Ora disponibile sull’App Store.",
+      "pl": "Dostępne już w App Store.",
+      "ru": "Уже доступно в App Store.",
+      "ar": "متاح الآن على App Store."
+    },
+    "support_url": "support.html"
   }
 ]
