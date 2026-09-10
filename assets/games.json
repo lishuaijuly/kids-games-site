@@ -4,7 +4,19 @@
     "status": "released",
     "age": "6–8",
     "locales": [
-      "en", "zh-Hans", "zh-Hant", "ja", "es", "de", "fr", "ko", "pt-BR", "it", "pl", "ru", "ar"
+      "en",
+      "zh-Hans",
+      "zh-Hant",
+      "ja",
+      "es",
+      "de",
+      "fr",
+      "ko",
+      "pt-BR",
+      "it",
+      "pl",
+      "ru",
+      "ar"
     ],
     "privacy": {
       "data_collection": "none",
@@ -15,7 +27,7 @@
     "app_store": {
       "id": "6804195627",
       "country": "us",
-      "last_synced": "2026-08-29T12:26:44.055Z",
+      "last_synced": "2026-09-10T05:16:28.954Z",
       "store_name_en": "Animal Puzzle Fun"
     },
     "artwork": {
@@ -145,7 +157,19 @@
     "status": "released",
     "age": "6–8",
     "locales": [
-      "en", "zh-Hans", "zh-Hant", "ja", "es", "de", "fr", "ko", "pt-BR", "it", "pl", "ru", "ar"
+      "en",
+      "zh-Hans",
+      "zh-Hant",
+      "ja",
+      "es",
+      "de",
+      "fr",
+      "ko",
+      "pt-BR",
+      "it",
+      "pl",
+      "ru",
+      "ar"
     ],
     "privacy": {
       "data_collection": "none",
@@ -157,7 +181,7 @@
       "id": "6804242780",
       "country": "us",
       "store_name_en": "Animal Spot Difference",
-      "last_synced": "2026-08-29T12:28:58.708Z"
+      "last_synced": "2026-09-10T05:16:29.896Z"
     },
     "artwork": {
       "icon": "assets/animal-spot-difference-app-icon.jpg",
@@ -265,6 +289,113 @@
         "تلميحات لطيفة وخريطة مراحل واضحة",
         "بلا إعلانات أو حسابات أو مؤقتات أو ضغط"
       ]
+    },
+    "release_note": {
+      "zh": "现已在 App Store 上架。",
+      "en": "Now available on the App Store.",
+      "zh-Hant": "現已在 App Store 上架。",
+      "ja": "App Store で配信中です。",
+      "es": "Ya disponible en el App Store.",
+      "de": "Jetzt im App Store erhältlich.",
+      "fr": "Disponible dès maintenant sur l’App Store.",
+      "ko": "App Store에서 지금 이용할 수 있어요.",
+      "pt-BR": "Já disponível na App Store.",
+      "it": "Ora disponibile sull’App Store.",
+      "pl": "Dostępne już w App Store.",
+      "ru": "Уже доступно в App Store.",
+      "ar": "متاح الآن على App Store."
+    },
+    "support_url": "support.html"
+  },
+  {
+    "id": "animal-maze",
+    "status": "released",
+    "age": "6–8",
+    "locales": [
+      "en",
+      "zh-Hans",
+      "zh-Hant",
+      "ja",
+      "es",
+      "de",
+      "fr",
+      "ko",
+      "pt-BR",
+      "it",
+      "pl",
+      "ru",
+      "ar"
+    ],
+    "privacy": {
+      "data_collection": "none",
+      "tracking": "none",
+      "advertising": "none",
+      "child_accounts": "none"
+    },
+    "app_store": {
+      "id": "6801803719",
+      "country": "us",
+      "store_name_en": "Animal Maze: Path Home",
+      "last_synced": "2026-09-10T05:16:30.910Z"
+    },
+    "artwork": {
+      "icon": "assets/animal-maze-app-icon.jpg",
+      "screenshots": [
+        "assets/animal-maze-screenshot-01.jpg",
+        "assets/animal-maze-screenshot-02.jpg",
+        "assets/animal-maze-screenshot-03.jpg",
+        "assets/animal-maze-screenshot-04.jpg"
+      ]
+    },
+    "app_store_url": "https://apps.apple.com/us/app/animal-maze-path-home/id6801803719",
+    "title": {
+      "en": "Animal Maze: Path Home",
+      "zh": "动物迷宫：回家之路",
+      "zh-Hant": "動物迷宮：回家之路",
+      "ja": "どうぶつ迷路：おうちへのみち",
+      "es": "Laberinto de animales: Camino a casa",
+      "de": "Tierlabyrinth: Der Weg nach Hause",
+      "fr": "Labyrinthe des animaux : le chemin du retour",
+      "ko": "동물 미로: 집으로 가는 길",
+      "pt-BR": "Labirinto dos animais: Caminho para casa",
+      "it": "Labirinto degli animali: La strada di casa",
+      "pl": "Labirynt zwierząt: Droga do domu",
+      "ru": "Лабиринт животных: Дорога домой",
+      "ar": "متاهة الحيوانات: طريق العودة إلى المنزل"
+    },
+    "summary": {
+      "en": "Animal Maze is a calm path-planning game for children ages 6–8. Drag an animal or hold a direction control to explore each maze and find the way home. Clear forks and safe dead ends encourage observation without punishment.",
+      "zh": "动物迷宫是一款适合 6–8 岁儿童的轻松路径规划游戏。拖动动物或按住方向控制来探索每个迷宫，找到回家的路。清晰的岔路和安全的死路鼓励观察，不会带来挫败感。",
+      "zh-Hant": "動物迷宮是一款適合 6–8 歲兒童的輕鬆路徑規劃遊戲。拖曳動物或按住方向控制來探索每個迷宮，找到回家的路。清楚的岔路和安全的死路鼓勵觀察，不會帶來挫折感。",
+      "ja": "どうぶつ迷路は、6〜8歳の子どものための、落ち着いて道を考えるゲームです。動物をドラッグするか方向ボタンを押し続けて、迷路を探検しながらおうちへの道を見つけます。分かりやすい分かれ道と安心して試せる行き止まりで、失敗を恐れず観察できます。",
+      "es": "Laberinto de animales es un tranquilo juego de planificación de rutas para niños de 6 a 8 años. Arrastra un animal o mantén pulsado un control de dirección para explorar cada laberinto y encontrar el camino a casa. Los cruces claros y los callejones sin salida seguros animan a observar sin castigos.",
+      "de": "Tierlabyrinth ist ein ruhiges Spiel zum Planen von Wegen für Kinder von 6 bis 8 Jahren. Ziehe ein Tier oder halte eine Richtungstaste gedrückt, um jedes Labyrinth zu erkunden und den Weg nach Hause zu finden. Klare Weggabelungen und sichere Sackgassen fördern das Beobachten ohne Druck.",
+      "fr": "Labyrinthe des animaux est un jeu calme de planification de parcours pour les enfants de 6 à 8 ans. Faites glisser un animal ou maintenez une commande de direction pour explorer chaque labyrinthe et retrouver le chemin de la maison. Des embranchements clairs et des impasses sans risque encouragent l’observation sans punition.",
+      "ko": "동물 미로는 6~8세 어린이를 위한 차분한 길 찾기 게임입니다. 동물을 끌거나 방향 조작을 길게 눌러 각 미로를 탐험하고 집으로 가는 길을 찾아보세요. 분명한 갈림길과 안전한 막다른길은 부담 없이 관찰하도록 도와줍니다.",
+      "pt-BR": "Labirinto dos animais é um jogo tranquilo de planejamento de caminhos para crianças de 6 a 8 anos. Arraste um animal ou mantenha um controle de direção pressionado para explorar cada labirinto e encontrar o caminho para casa. Bifurcações claras e becos sem saída seguros estimulam a observação sem punição.",
+      "it": "Labirinto degli animali è un tranquillo gioco di pianificazione del percorso per bambini dai 6 agli 8 anni. Trascina un animale o tieni premuto un comando direzionale per esplorare ogni labirinto e trovare la strada di casa. Bivi chiari e vicoli ciechi sicuri incoraggiano l’osservazione senza punizioni.",
+      "pl": "Labirynt zwierząt to spokojna gra w planowanie trasy dla dzieci w wieku 6–8 lat. Przeciągaj zwierzę lub przytrzymaj sterowanie kierunkiem, aby odkrywać każdy labirynt i znaleźć drogę do domu. Czytelne rozwidlenia i bezpieczne ślepe zaułki zachęcają do obserwacji bez kar.",
+      "ru": "Лабиринт животных — спокойная игра на планирование пути для детей 6–8 лет. Перетаскивайте животное или удерживайте кнопку направления, чтобы исследовать каждый лабиринт и найти дорогу домой. Понятные развилки и безопасные тупики помогают наблюдать без страха ошибиться.",
+      "ar": "متاهة الحيوانات لعبة هادئة لتخطيط المسار للأطفال من 6 إلى 8 سنوات. اسحب حيوانًا أو اضغط باستمرار على زر الاتجاه لاستكشاف كل متاهة والعثور على طريق العودة إلى المنزل. تشجّع التفرعات الواضحة والنهايات المسدودة الآمنة على الملاحظة من دون عقاب."
+    },
+    "features": {
+      "en": [
+        "Explore mazes by dragging an animal or using direction controls",
+        "Practice observation and path planning at a calm pace",
+        "Try different routes with clear forks and safe dead ends"
+      ],
+      "zh": ["拖动动物或使用方向控制探索迷宫", "以轻松的节奏练习观察和路径规划", "在清晰岔路和安全死路中尝试不同路线"],
+      "zh-Hant": ["拖曳動物或使用方向控制探索迷宮", "以輕鬆的節奏練習觀察和路徑規劃", "在清楚岔路和安全死路中嘗試不同路線"],
+      "ja": ["動物をドラッグするか方向ボタンで迷路を探検", "ゆったりしたペースで観察と道順づくりを練習", "分かりやすい分かれ道と安心な行き止まりで違う道を試せる"],
+      "es": ["Explora laberintos arrastrando un animal o usando controles de dirección", "Practica la observación y la planificación de rutas a un ritmo tranquilo", "Prueba rutas distintas con cruces claros y callejones sin salida seguros"],
+      "de": ["Erkunde Labyrinthe, indem du ein Tier ziehst oder Richtungstasten benutzt", "Übe Beobachtung und Wegplanung in ruhigem Tempo", "Probiere verschiedene Wege mit klaren Gabelungen und sicheren Sackgassen"],
+      "fr": ["Explorez les labyrinthes en faisant glisser un animal ou avec les commandes de direction", "Exercez l’observation et la planification de parcours à un rythme calme", "Essayez différents chemins grâce à des embranchements clairs et des impasses sans risque"],
+      "ko": ["동물을 끌거나 방향 조작으로 미로 탐험", "차분한 속도로 관찰과 길 찾기 연습", "분명한 갈림길과 안전한 막다른길에서 여러 경로 시도"],
+      "pt-BR": ["Explore labirintos arrastando um animal ou usando controles de direção", "Pratique observação e planejamento de caminhos em um ritmo tranquilo", "Experimente rotas diferentes com bifurcações claras e becos sem saída seguros"],
+      "it": ["Esplora i labirinti trascinando un animale o usando i comandi direzionali", "Esercitati nell’osservazione e nella pianificazione del percorso con calma", "Prova percorsi diversi con bivi chiari e vicoli ciechi sicuri"],
+      "pl": ["Odkrywaj labirynty, przeciągając zwierzę lub używając sterowania kierunkiem", "Ćwicz obserwację i planowanie trasy w spokojnym tempie", "Próbuj różnych dróg dzięki czytelnym rozwidleniom i bezpiecznym ślepym zaułkom"],
+      "ru": ["Исследуйте лабиринты, перетаскивая животное или используя кнопки направления", "Тренируйте наблюдательность и планирование пути в спокойном темпе", "Пробуйте разные пути с понятными развилками и безопасными тупиками"],
+      "ar": ["استكشف المتاهات بسحب حيوان أو باستخدام أزرار الاتجاه", "تدرّب على الملاحظة وتخطيط المسار بوتيرة هادئة", "جرّب طرقًا مختلفة مع تفرعات واضحة ونهايات مسدودة آمنة"]
     },
     "release_note": {
       "zh": "现已在 App Store 上架。",
