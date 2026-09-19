@@ -3,6 +3,7 @@
     "id": "animal-puzzle-fun",
     "status": "released",
     "age": "6–8",
+    "free_level_count": 20,
     "locales": [
       "en",
       "zh-Hans",
@@ -27,17 +28,19 @@
     "app_store": {
       "id": "6804195627",
       "country": "us",
-      "last_synced": "2026-09-10T05:16:28.954Z",
-      "store_name_en": "Animal Puzzle Fun"
+      "last_synced": "2026-09-19T14:38:20.842Z",
+      "store_name_en": "Animal Jigsaw: Kids Puzzle"
     },
     "artwork": {
       "icon": "assets/animal-puzzle-fun-app-icon.jpg",
       "screenshots": [
         "assets/animal-puzzle-fun-screenshot-01.jpg",
-        "assets/animal-puzzle-fun-screenshot-02.jpg"
+        "assets/animal-puzzle-fun-screenshot-02.jpg",
+        "assets/animal-puzzle-fun-screenshot-03.jpg",
+        "assets/animal-puzzle-fun-screenshot-04.jpg"
       ]
     },
-    "app_store_url": "https://apps.apple.com/us/app/animal-puzzle-fun/id6804195627",
+    "app_store_url": "https://apps.apple.com/us/app/animal-jigsaw-kids-puzzle/id6804195627",
     "title": {
       "zh": "动物拼拼乐",
       "en": "Animal Puzzle Fun",
@@ -156,6 +159,7 @@
     "id": "animal-spot-difference",
     "status": "released",
     "age": "6–8",
+    "free_level_count": 5,
     "locales": [
       "en",
       "zh-Hans",
@@ -180,8 +184,8 @@
     "app_store": {
       "id": "6804242780",
       "country": "us",
-      "store_name_en": "Animal Spot Difference",
-      "last_synced": "2026-09-10T05:16:29.896Z"
+      "store_name_en": "Animal Spot the Difference",
+      "last_synced": "2026-09-19T14:38:22.444Z"
     },
     "artwork": {
       "icon": "assets/animal-spot-difference-app-icon.jpg",
@@ -192,7 +196,7 @@
         "assets/animal-spot-difference-screenshot-04.jpg"
       ]
     },
-    "app_store_url": "https://apps.apple.com/us/app/animal-spot-difference/id6804242780",
+    "app_store_url": "https://apps.apple.com/us/app/animal-spot-the-difference/id6804242780",
     "title": {
       "zh": "动物找不同",
       "en": "Animal Spot Difference",
@@ -311,6 +315,7 @@
     "id": "animal-maze",
     "status": "released",
     "age": "6–8",
+    "free_level_count": 20,
     "locales": [
       "en",
       "zh-Hans",
@@ -335,8 +340,8 @@
     "app_store": {
       "id": "6801803719",
       "country": "us",
-      "store_name_en": "Animal Maze: Path Home",
-      "last_synced": "2026-09-10T05:16:30.910Z"
+      "store_name_en": "Animal Mazes for Kids",
+      "last_synced": "2026-09-19T14:38:25.133Z"
     },
     "artwork": {
       "icon": "assets/animal-maze-app-icon.jpg",
@@ -347,7 +352,7 @@
         "assets/animal-maze-screenshot-04.jpg"
       ]
     },
-    "app_store_url": "https://apps.apple.com/us/app/animal-maze-path-home/id6801803719",
+    "app_store_url": "https://apps.apple.com/us/app/animal-mazes-for-kids/id6801803719",
     "title": {
       "en": "Animal Maze: Path Home",
       "zh": "动物迷宫：回家之路",
@@ -384,18 +389,66 @@
         "Practice observation and path planning at a calm pace",
         "Try different routes with clear forks and safe dead ends"
       ],
-      "zh": ["拖动动物或使用方向控制探索迷宫", "以轻松的节奏练习观察和路径规划", "在清晰岔路和安全死路中尝试不同路线"],
-      "zh-Hant": ["拖曳動物或使用方向控制探索迷宮", "以輕鬆的節奏練習觀察和路徑規劃", "在清楚岔路和安全死路中嘗試不同路線"],
-      "ja": ["動物をドラッグするか方向ボタンで迷路を探検", "ゆったりしたペースで観察と道順づくりを練習", "分かりやすい分かれ道と安心な行き止まりで違う道を試せる"],
-      "es": ["Explora laberintos arrastrando un animal o usando controles de dirección", "Practica la observación y la planificación de rutas a un ritmo tranquilo", "Prueba rutas distintas con cruces claros y callejones sin salida seguros"],
-      "de": ["Erkunde Labyrinthe, indem du ein Tier ziehst oder Richtungstasten benutzt", "Übe Beobachtung und Wegplanung in ruhigem Tempo", "Probiere verschiedene Wege mit klaren Gabelungen und sicheren Sackgassen"],
-      "fr": ["Explorez les labyrinthes en faisant glisser un animal ou avec les commandes de direction", "Exercez l’observation et la planification de parcours à un rythme calme", "Essayez différents chemins grâce à des embranchements clairs et des impasses sans risque"],
-      "ko": ["동물을 끌거나 방향 조작으로 미로 탐험", "차분한 속도로 관찰과 길 찾기 연습", "분명한 갈림길과 안전한 막다른길에서 여러 경로 시도"],
-      "pt-BR": ["Explore labirintos arrastando um animal ou usando controles de direção", "Pratique observação e planejamento de caminhos em um ritmo tranquilo", "Experimente rotas diferentes com bifurcações claras e becos sem saída seguros"],
-      "it": ["Esplora i labirinti trascinando un animale o usando i comandi direzionali", "Esercitati nell’osservazione e nella pianificazione del percorso con calma", "Prova percorsi diversi con bivi chiari e vicoli ciechi sicuri"],
-      "pl": ["Odkrywaj labirynty, przeciągając zwierzę lub używając sterowania kierunkiem", "Ćwicz obserwację i planowanie trasy w spokojnym tempie", "Próbuj różnych dróg dzięki czytelnym rozwidleniom i bezpiecznym ślepym zaułkom"],
-      "ru": ["Исследуйте лабиринты, перетаскивая животное или используя кнопки направления", "Тренируйте наблюдательность и планирование пути в спокойном темпе", "Пробуйте разные пути с понятными развилками и безопасными тупиками"],
-      "ar": ["استكشف المتاهات بسحب حيوان أو باستخدام أزرار الاتجاه", "تدرّب على الملاحظة وتخطيط المسار بوتيرة هادئة", "جرّب طرقًا مختلفة مع تفرعات واضحة ونهايات مسدودة آمنة"]
+      "zh": [
+        "拖动动物或使用方向控制探索迷宫",
+        "以轻松的节奏练习观察和路径规划",
+        "在清晰岔路和安全死路中尝试不同路线"
+      ],
+      "zh-Hant": [
+        "拖曳動物或使用方向控制探索迷宮",
+        "以輕鬆的節奏練習觀察和路徑規劃",
+        "在清楚岔路和安全死路中嘗試不同路線"
+      ],
+      "ja": [
+        "動物をドラッグするか方向ボタンで迷路を探検",
+        "ゆったりしたペースで観察と道順づくりを練習",
+        "分かりやすい分かれ道と安心な行き止まりで違う道を試せる"
+      ],
+      "es": [
+        "Explora laberintos arrastrando un animal o usando controles de dirección",
+        "Practica la observación y la planificación de rutas a un ritmo tranquilo",
+        "Prueba rutas distintas con cruces claros y callejones sin salida seguros"
+      ],
+      "de": [
+        "Erkunde Labyrinthe, indem du ein Tier ziehst oder Richtungstasten benutzt",
+        "Übe Beobachtung und Wegplanung in ruhigem Tempo",
+        "Probiere verschiedene Wege mit klaren Gabelungen und sicheren Sackgassen"
+      ],
+      "fr": [
+        "Explorez les labyrinthes en faisant glisser un animal ou avec les commandes de direction",
+        "Exercez l’observation et la planification de parcours à un rythme calme",
+        "Essayez différents chemins grâce à des embranchements clairs et des impasses sans risque"
+      ],
+      "ko": [
+        "동물을 끌거나 방향 조작으로 미로 탐험",
+        "차분한 속도로 관찰과 길 찾기 연습",
+        "분명한 갈림길과 안전한 막다른길에서 여러 경로 시도"
+      ],
+      "pt-BR": [
+        "Explore labirintos arrastando um animal ou usando controles de direção",
+        "Pratique observação e planejamento de caminhos em um ritmo tranquilo",
+        "Experimente rotas diferentes com bifurcações claras e becos sem saída seguros"
+      ],
+      "it": [
+        "Esplora i labirinti trascinando un animale o usando i comandi direzionali",
+        "Esercitati nell’osservazione e nella pianificazione del percorso con calma",
+        "Prova percorsi diversi con bivi chiari e vicoli ciechi sicuri"
+      ],
+      "pl": [
+        "Odkrywaj labirynty, przeciągając zwierzę lub używając sterowania kierunkiem",
+        "Ćwicz obserwację i planowanie trasy w spokojnym tempie",
+        "Próbuj różnych dróg dzięki czytelnym rozwidleniom i bezpiecznym ślepym zaułkom"
+      ],
+      "ru": [
+        "Исследуйте лабиринты, перетаскивая животное или используя кнопки направления",
+        "Тренируйте наблюдательность и планирование пути в спокойном темпе",
+        "Пробуйте разные пути с понятными развилками и безопасными тупиками"
+      ],
+      "ar": [
+        "استكشف المتاهات بسحب حيوان أو باستخدام أزرار الاتجاه",
+        "تدرّب على الملاحظة وتخطيط المسار بوتيرة هادئة",
+        "جرّب طرقًا مختلفة مع تفرعات واضحة ونهايات مسدودة آمنة"
+      ]
     },
     "release_note": {
       "zh": "现已在 App Store 上架。",
@@ -411,6 +464,184 @@
       "pl": "Dostępne już w App Store.",
       "ru": "Уже доступно в App Store.",
       "ar": "متاح الآن على App Store."
+    },
+    "support_url": "support.html"
+  },
+  {
+    "id": "bottle-pour-puzzle",
+    "status": "released",
+    "age": "6–8",
+    "free_level_count": 20,
+    "locales": [
+      "en",
+      "zh-Hans",
+      "zh-Hant",
+      "ja",
+      "es",
+      "de",
+      "fr",
+      "ko",
+      "pt-BR",
+      "it",
+      "pl",
+      "ru",
+      "ar"
+    ],
+    "privacy": {
+      "data_collection": "none",
+      "tracking": "none",
+      "advertising": "none",
+      "child_accounts": "none"
+    },
+    "app_store": {
+      "id": "6806296828",
+      "country": "us",
+      "store_name_en": "Water Sort: Rainbow Bottles",
+      "last_synced": "2026-09-19T14:38:26.267Z"
+    },
+    "artwork": {
+      "icon": "assets/bottle-pour-puzzle-app-icon.jpg",
+      "screenshots": [
+        "assets/bottle-pour-puzzle-screenshot-01.jpg",
+        "assets/bottle-pour-puzzle-screenshot-02.jpg",
+        "assets/bottle-pour-puzzle-screenshot-03.jpg",
+        "assets/bottle-pour-puzzle-screenshot-04.jpg"
+      ]
+    },
+    "app_store_url": "https://apps.apple.com/us/app/water-sort-rainbow-bottles/id6806296828",
+    "title": {
+      "zh": "彩虹水瓶：倒水颜色排序",
+      "en": "Water Sort: Rainbow Bottles",
+      "zh-Hant": "彩虹水瓶：倒水顏色排序",
+      "ja": "ウォーターソート：カラーボトル",
+      "es": "Ordena agua: botellas de color",
+      "de": "Wasser sortieren: Farbflaschen",
+      "fr": "Tri d’eau : flacons colorés",
+      "ko": "워터 소트: 컬러 병 퍼즐",
+      "pt-BR": "Water Sort: garrafas coloridas",
+      "it": "Water Sort: bottiglie colorate",
+      "pl": "Sortuj wodę: kolorowe butelki",
+      "ru": "Сортировка воды: бутылки",
+      "ar": "فرز الماء: زجاجات ملوّنة"
+    },
+    "summary": {
+      "zh": "把一层层颜色整理回各自的水瓶，慢慢想好每一步。",
+      "en": "Sort bright layers of color into their own bottles.",
+      "zh-Hant": "把一層層顏色整理回各自的水瓶，慢慢想好每一步。",
+      "ja": "色の層をそれぞれのボトルに分け、次の一手をゆっくり考えます。",
+      "es": "Ordena capas de colores en sus botellas mientras piensas cada movimiento.",
+      "de": "Sortiere Farbschichten in ihre Flaschen und plane jeden Zug in Ruhe.",
+      "fr": "Trie les couches de couleur dans leurs flacons en réfléchissant à chaque coup.",
+      "ko": "색깔 층을 알맞은 병에 나누며 다음 수를 천천히 생각해요.",
+      "pt-BR": "Organize camadas coloridas nas garrafas certas pensando em cada jogada.",
+      "it": "Ordina gli strati colorati nelle bottiglie giuste pensando a ogni mossa.",
+      "pl": "Sortuj kolorowe warstwy do właściwych butelek i planuj każdy ruch.",
+      "ru": "Сортируйте цветные слои по своим бутылкам и спокойно планируйте ходы.",
+      "ar": "رتّب طبقات الألوان في زجاجاتها المناسبة وفكّر في كل حركة."
+    },
+    "features": {
+      "zh": ["前 20 关免费游玩", "离线整理颜色并规划倒水顺序", "无广告、无账号、无时间限制"],
+      "en": ["First 20 levels free", "Sort colors offline and plan each pour", "No ads, accounts, or timers"],
+      "zh-Hant": ["前 20 關免費遊玩", "離線整理顏色並規劃倒水順序", "無廣告、無帳號、無時間限制"],
+      "ja": ["最初の20ステージは無料", "オフラインで色を整理して注ぐ順番を考える", "広告・アカウント・時間制限なし"],
+      "es": ["Primeros 20 niveles gratis", "Ordena colores sin conexión y planifica cada vertido", "Sin anuncios, cuentas ni temporizadores"],
+      "de": ["Die ersten 20 Level kostenlos", "Farben offline sortieren und jeden Guss planen", "Keine Werbung, Konten oder Zeitlimits"],
+      "fr": ["20 premiers niveaux gratuits", "Trie les couleurs hors ligne et planifie chaque versement", "Sans publicité, compte ni limite de temps"],
+      "ko": ["처음 20레벨 무료", "오프라인에서 색을 나누고 붓는 순서 계획하기", "광고, 계정, 시간 제한 없음"],
+      "pt-BR": ["Primeiros 20 níveis grátis", "Organize cores offline e planeje cada despejo", "Sem anúncios, contas ou cronômetros"],
+      "it": ["Primi 20 livelli gratuiti", "Ordina i colori offline e pianifica ogni versamento", "Senza pubblicità, account o timer"],
+      "pl": ["Pierwsze 20 poziomów za darmo", "Sortuj kolory offline i planuj każde przelewanie", "Bez reklam, kont i limitów czasu"],
+      "ru": ["Первые 20 уровней бесплатно", "Сортируйте цвета офлайн и планируйте переливания", "Без рекламы, аккаунтов и таймеров"],
+      "ar": ["أول 20 مستوى مجاناً", "رتّب الألوان دون اتصال وخطّط لكل سكب", "بلا إعلانات أو حسابات أو مؤقتات"]
+    },
+    "support_url": "support.html"
+  },
+  {
+    "id": "animal-color-garden",
+    "status": "released",
+    "age": "6–8",
+    "free_level_count": 20,
+    "locales": [
+      "en",
+      "zh-Hans",
+      "zh-Hant",
+      "ja",
+      "es",
+      "de",
+      "fr",
+      "ko",
+      "pt-BR",
+      "it",
+      "pl",
+      "ru",
+      "ar"
+    ],
+    "privacy": {
+      "data_collection": "none",
+      "tracking": "none",
+      "advertising": "none",
+      "child_accounts": "none"
+    },
+    "app_store": {
+      "id": "6810296725",
+      "country": "us",
+      "store_name_en": "Animal Coloring Games for Kids",
+      "last_synced": "2026-09-19T14:38:26.929Z"
+    },
+    "artwork": {
+      "icon": "assets/animal-color-garden-app-icon.jpg",
+      "screenshots": [
+        "assets/animal-color-garden-screenshot-01.jpg",
+        "assets/animal-color-garden-screenshot-02.jpg",
+        "assets/animal-color-garden-screenshot-03.jpg",
+        "assets/animal-color-garden-screenshot-04.jpg"
+      ]
+    },
+    "app_store_url": "https://apps.apple.com/us/app/animal-coloring-games-for-kids/id6810296725",
+    "title": {
+      "zh": "动物涂色游戏",
+      "en": "Animal Coloring Games for Kids",
+      "zh-Hant": "動物塗色遊戲",
+      "ja": "どうぶつぬりえゲーム",
+      "es": "Juegos de colorear animales para niños",
+      "de": "Tier-Malspiele für Kinder",
+      "fr": "Jeux de coloriage d’animaux pour enfants",
+      "ko": "어린이 동물 색칠 놀이",
+      "pt-BR": "Jogos de colorir animais para crianças",
+      "it": "Giochi di colori con animali per bambini",
+      "pl": "Kolorowanki ze zwierzętami dla dzieci",
+      "ru": "Раскраски с животными для детей",
+      "ar": "ألعاب تلوين الحيوانات للأطفال"
+    },
+    "summary": {
+      "zh": "选择颜色点按动物轮廓内的部分完成涂色，前 20 关免费，更多图画可由家长确认后一次性解锁。",
+      "en": "Choose a color and tap a part inside the animal outline to fill it. Switch colors, recolor any part, or undo your latest move. Finish the picture to save it in your collection. Open the same animal again whenever you want to try a different color combination. After parental confirmation, a one-time in-app purchase unlocks more coloring pictures.",
+      "zh-Hant": "選擇顏色並點按動物輪廓內的區域完成塗色，前 20 關免費，更多圖畫可由家長確認後一次解鎖。",
+      "ja": "色を選んで動物の輪郭の中を塗ります。最初の20ステージは無料で、保護者の確認後に追加のぬりえを一度の購入で開けます。",
+      "es": "Elige un color y toca dentro del animal para rellenarlo. Los primeros 20 niveles son gratis y, tras la confirmación de un adulto, una compra única desbloquea más dibujos.",
+      "de": "Wähle eine Farbe und tippe in die Tierumrisse. Die ersten 20 Level sind kostenlos; nach Elternbestätigung schaltet ein Einmalkauf weitere Bilder frei.",
+      "fr": "Choisis une couleur et touche l’intérieur de l’animal. Les 20 premiers niveaux sont gratuits ; un achat unique validé par un parent ouvre d’autres dessins.",
+      "ko": "색을 고르고 동물 윤곽 안을 눌러 색칠해요. 처음 20레벨은 무료이며 보호자 확인 후 한 번 구매하면 더 많은 그림을 열 수 있어요.",
+      "pt-BR": "Escolha uma cor e toque dentro do animal para preencher. Os 20 primeiros níveis são grátis; uma compra única aprovada por um responsável libera mais desenhos.",
+      "it": "Scegli un colore e tocca l’interno dell’animale per riempirlo. I primi 20 livelli sono gratuiti; un acquisto unico approvato da un genitore sblocca altri disegni.",
+      "pl": "Wybierz kolor i dotknij wnętrza zwierzęcia, aby je wypełnić. Pierwsze 20 poziomów jest bezpłatnych, a jednorazowy zakup zatwierdzony przez rodzica odblokowuje kolejne obrazki.",
+      "ru": "Выберите цвет и нажмите внутри контура животного. Первые 20 уровней бесплатны, а разовая покупка после подтверждения родителя открывает новые раскраски.",
+      "ar": "اختر لوناً واضغط داخل إطار الحيوان لتلوينه. أول 20 مستوى مجاني، وتفتح عملية شراء واحدة بعد موافقة ولي الأمر رسومات إضافية."
+    },
+    "features": {
+      "zh": ["前 20 关免费游玩", "点按、换色、重涂或撤销", "无广告、无账号、无时间限制"],
+      "en": ["First 20 levels free", "Tap, recolor, and undo", "No ads, accounts, or timers"],
+      "zh-Hant": ["前 20 關免費遊玩", "點按、換色、重塗或復原", "無廣告、無帳號、無時間限制"],
+      "ja": ["最初の20ステージは無料", "タップ、塗り直し、取り消し", "広告・アカウント・時間制限なし"],
+      "es": ["Primeros 20 niveles gratis", "Toca, cambia colores y deshaz", "Sin anuncios, cuentas ni temporizadores"],
+      "de": ["Die ersten 20 Level kostenlos", "Antippen, neu färben und rückgängig machen", "Keine Werbung, Konten oder Zeitlimits"],
+      "fr": ["20 premiers niveaux gratuits", "Touche, recolore et annule", "Sans publicité, compte ni limite de temps"],
+      "ko": ["처음 20레벨 무료", "탭하고 다시 색칠하고 실행 취소하기", "광고, 계정, 시간 제한 없음"],
+      "pt-BR": ["Primeiros 20 níveis grátis", "Toque, recolora e desfaça", "Sem anúncios, contas ou cronômetros"],
+      "it": ["Primi 20 livelli gratuiti", "Tocca, ricolora e annulla", "Senza pubblicità, account o timer"],
+      "pl": ["Pierwsze 20 poziomów za darmo", "Dotykaj, koloruj ponownie i cofaj", "Bez reklam, kont i limitów czasu"],
+      "ru": ["Первые 20 уровней бесплатно", "Нажимайте, перекрашивайте и отменяйте ход", "Без рекламы, аккаунтов и таймеров"],
+      "ar": ["أول 20 مستوى مجاناً", "اضغط وأعد التلوين وتراجع عن الخطوة", "بلا إعلانات أو حسابات أو مؤقتات"]
     },
     "support_url": "support.html"
   }

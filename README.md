@@ -42,6 +42,12 @@ Do not copy Drive metadata or unrelated `/ios游戏` files into the repository.
 
 This is a parent/guardian information and support site. Children's gameplay is in the iPhone/iPad apps. The site does not provide child accounts, chat, comments, advertising, or online gameplay.
 
+## Release boundary
+
+App Store publication, review submission, availability, and release decisions are outside this repository's scope. When the developer reports that an app is already public or has updated, this project only synchronizes the public App Store listing data and media into the website catalog, validates the site, and commits the website changes to Git.
+
+Current published catalog: `6804195627`, `6804242780`, `6801803719`, `6806296828`, and `6810296725`.
+
 ## Languages
 
 - Simplified Chinese

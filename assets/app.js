@@ -238,6 +238,7 @@ async function renderGame(){
       <div class="meta">
         <span>${t('无广告','No ads','広告なし','Sin anuncios')}</span>
         <span>${t('无订阅','No subscriptions','サブスクリプションなし','Sin suscripciones')}</span>
+        ${Number.isInteger(g.free_level_count) ? `<span>${t(`前 ${g.free_level_count} 关免费`,`First ${g.free_level_count} levels free`,`最初の${g.free_level_count}ステージは無料`,`Los primeros ${g.free_level_count} niveles son gratis`)}</span>` : ''}
       </div>
       <h2>${t('核心特点','Key features','主な特徴','Características principales')}</h2>
       <ul class="feature-list">${fs.map(x=>`<li>✓ ${x}</li>`).join('')}</ul>
