@@ -97,10 +97,10 @@ section{padding:58px 0}
 .sub{color:var(--muted);max-width:760px;margin:0}
 .games{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .game-card{
-  display:grid;grid-template-columns:118px minmax(0,1fr);gap:18px;min-height:232px;text-decoration:none;padding:18px;border-radius:22px;
+  display:grid;grid-template-columns:84px minmax(0,1fr);gap:14px;min-height:132px;text-decoration:none;padding:14px;border-radius:18px;
   border:1px solid var(--line);background:#fff;box-shadow:0 7px 24px rgba(16,35,49,.04);transition:.18s ease
 }
-.game-card-art{height:118px;border-radius:22px;overflow:hidden;background:var(--brand-soft);display:grid;place-items:center}
+.game-card-art{width:84px;height:84px;border-radius:18px;overflow:hidden;background:var(--brand-soft);display:grid;place-items:center}
 .game-card-content{display:flex;flex-direction:column;min-width:0}
 .game-card:hover{transform:translateY(-3px);box-shadow:0 18px 46px rgba(16,35,49,.09)}
 .game-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
@@ -113,13 +113,14 @@ section{padding:58px 0}
 .badge-approved{background:#E4EFFA;color:#2D6F9D}
 .badge-released{background:var(--green-soft);color:#32743A}
 .approved-release{background:#F3F9FE;border-color:#B8D9F1;color:#285E86}
-.game-card h3{font-size:25px;margin:19px 0 8px;letter-spacing:-.025em}
-.game-card-content h3{margin:12px 0 6px}
-.game-card p{color:var(--muted);margin:0 0 18px}
+.game-card h3{font-size:20px;margin:10px 0 4px;letter-spacing:-.025em}
+.game-card-content h3{margin:8px 0 3px}
+.game-card p{color:var(--muted);margin:0 0 8px}
+.game-card-note{font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:auto}
 .chip{font-size:11px;padding:5px 8px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);color:var(--muted)}
-.game-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:20px;padding-top:15px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
-.game-card-content .game-foot{margin-top:auto;padding-top:12px}
+.game-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:auto;padding-top:8px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+.game-card-content .game-foot{margin-top:auto;padding-top:8px}
 .details{color:var(--brand-action);font-weight:800}
 
 .benefit-section{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -192,9 +193,9 @@ footer{border-top:1px solid var(--line);padding:28px 0 38px;color:var(--muted);f
   .hero h1{font-size:43px}
   section{padding:42px 0}
   .games,.benefits,.standards,.info-grid,.privacy-grid,.feature-list{grid-template-columns:1fr}
-  .game-card{grid-template-columns:92px minmax(0,1fr);gap:14px;padding:14px;min-height:0}
-  .game-card-art{height:92px;border-radius:18px}
-  .game-card h3{font-size:21px}
+  .game-card{grid-template-columns:72px minmax(0,1fr);gap:12px;padding:12px;min-height:0}
+  .game-card-art{width:72px;height:72px;border-radius:16px}
+  .game-card h3{font-size:19px}
   .game-detail-hero{grid-template-columns:1fr;gap:18px}
   .game-detail-art{width:116px;height:116px;border-radius:28px}
   .section-head{align-items:flex-start;flex-direction:column}

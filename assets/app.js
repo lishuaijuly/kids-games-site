@@ -148,7 +148,6 @@ async function loadGames(){
 }
 
 function card(g){
-  const fs = (gv(g,'features') || []).slice(0,2);
   return `<a class="game-card" href="game.html?id=${encodeURIComponent(g.id)}">
     <div class="game-card-art" aria-hidden="true">${gameIcon(g)}</div>
     <div class="game-card-content">
@@ -157,8 +156,7 @@ function card(g){
         <span class="age-chip">${t('适合年龄','Ages','対象年齢','Edades')} ${g.age}</span>
       </div>
       <h3>${gv(g,'title')}</h3>
-      <p>${gv(g,'summary')}</p>
-      <div class="chips">${fs.map(x=>`<span class="chip">${x}</span>`).join('')}</div>
+      <p class="game-card-note">${Number.isInteger(g.free_level_count) ? t(`前 ${g.free_level_count} 关免费`,`First ${g.free_level_count} levels free`,`最初の${g.free_level_count}ステージは無料`,`Los primeros ${g.free_level_count} niveles son gratis`) : t('查看详情了解玩法','See details for gameplay','遊び方は詳細をご覧ください','Consulta los detalles para ver cómo se juega')}</p>
       <div class="game-foot"><span class="details">${t('查看详情','Details','詳細を見る','Detalles')} →</span></div>
     </div>
   </a>`;
