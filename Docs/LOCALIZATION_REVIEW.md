@@ -28,3 +28,19 @@ Source intent:
 Review evidence: deterministic locale/artwork checks; separate target-language naturalness and back-translation comparison; terminology and ages 6–8 tone review; second semantic pass on the privacy claims against the Apple listing and catalog privacy defaults; Simplified/Traditional Chinese wording review; Brazilian Portuguese review; Arabic RTL and punctuation review. Unresolved items: none.
 
 Status: `AI_MULTIPASS_REVIEWED`. This was an AI-only review, not human or native-speaker certification.
+
+## 2026-09-22 — Animal Link and Little Track Pathways
+
+Catalog revision: `assets/games.json` in the same commit as this record.
+
+Changed locales: `en`, `zh-Hans`, `zh-Hant`, `ja`, `es`, `de`, `fr`, `ko`, `pt-BR`, `it`, `pl`, `ru`, `ar`.
+
+Source intent and provenance:
+
+- `Animal Link`: current public English App Store identity plus the current 13-language `AppStore/metadata.json` delivery from `/Users/lewin/projects/animal-link/`.
+- `Little Track Pathways`: the current 13-language `AppStore/metadata.json` delivery from `/Users/lewin/projects/little-track-pathways/`.
+- Website summaries use the reviewed promotional text; feature bullets use the reviewed subtitles. No behavior, privacy practice, level inventory, or commercial claim was added or inferred.
+
+Review evidence: all 13 locales were mapped to their exact platform locale; source meaning, child-friendly tone, terminology, and Arabic punctuation/RTL content were checked against the supplied current metadata. `node scripts/check-localization.mjs` passed for 95 static strings × 13 locales and 7 game records.
+
+Status: `AI_REVIEWED`. This was an AI-only source and semantic review, not human or native-speaker certification.

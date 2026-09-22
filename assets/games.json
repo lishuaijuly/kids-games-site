@@ -28,7 +28,7 @@
     "app_store": {
       "id": "6804195627",
       "country": "us",
-      "last_synced": "2026-09-19T14:38:20.842Z",
+      "last_synced": "2026-09-22T12:47:46.215Z",
       "store_name_en": "Animal Jigsaw: Kids Puzzle"
     },
     "artwork": {
@@ -185,7 +185,7 @@
       "id": "6804242780",
       "country": "us",
       "store_name_en": "Animal Spot the Difference",
-      "last_synced": "2026-09-19T14:38:22.444Z"
+      "last_synced": "2026-09-22T12:47:47.245Z"
     },
     "artwork": {
       "icon": "assets/animal-spot-difference-app-icon.jpg",
@@ -341,7 +341,7 @@
       "id": "6801803719",
       "country": "us",
       "store_name_en": "Animal Mazes for Kids",
-      "last_synced": "2026-09-19T14:38:25.133Z"
+      "last_synced": "2026-09-22T12:47:48.021Z"
     },
     "artwork": {
       "icon": "assets/animal-maze-app-icon.jpg",
@@ -497,7 +497,7 @@
       "id": "6806296828",
       "country": "us",
       "store_name_en": "Water Sort: Rainbow Bottles",
-      "last_synced": "2026-09-19T14:38:26.267Z"
+      "last_synced": "2026-09-22T12:47:50.006Z"
     },
     "artwork": {
       "icon": "assets/bottle-pour-puzzle-app-icon.jpg",
@@ -540,19 +540,71 @@
       "ar": "رتّب طبقات الألوان في زجاجاتها المناسبة وفكّر في كل حركة."
     },
     "features": {
-      "zh": ["前 20 关免费游玩", "离线整理颜色并规划倒水顺序", "无广告、无账号、无时间限制"],
-      "en": ["First 20 levels free", "Sort colors offline and plan each pour", "No ads, accounts, or timers"],
-      "zh-Hant": ["前 20 關免費遊玩", "離線整理顏色並規劃倒水順序", "無廣告、無帳號、無時間限制"],
-      "ja": ["最初の20ステージは無料", "オフラインで色を整理して注ぐ順番を考える", "広告・アカウント・時間制限なし"],
-      "es": ["Primeros 20 niveles gratis", "Ordena colores sin conexión y planifica cada vertido", "Sin anuncios, cuentas ni temporizadores"],
-      "de": ["Die ersten 20 Level kostenlos", "Farben offline sortieren und jeden Guss planen", "Keine Werbung, Konten oder Zeitlimits"],
-      "fr": ["20 premiers niveaux gratuits", "Trie les couleurs hors ligne et planifie chaque versement", "Sans publicité, compte ni limite de temps"],
-      "ko": ["처음 20레벨 무료", "오프라인에서 색을 나누고 붓는 순서 계획하기", "광고, 계정, 시간 제한 없음"],
-      "pt-BR": ["Primeiros 20 níveis grátis", "Organize cores offline e planeje cada despejo", "Sem anúncios, contas ou cronômetros"],
-      "it": ["Primi 20 livelli gratuiti", "Ordina i colori offline e pianifica ogni versamento", "Senza pubblicità, account o timer"],
-      "pl": ["Pierwsze 20 poziomów za darmo", "Sortuj kolory offline i planuj każde przelewanie", "Bez reklam, kont i limitów czasu"],
-      "ru": ["Первые 20 уровней бесплатно", "Сортируйте цвета офлайн и планируйте переливания", "Без рекламы, аккаунтов и таймеров"],
-      "ar": ["أول 20 مستوى مجاناً", "رتّب الألوان دون اتصال وخطّط لكل سكب", "بلا إعلانات أو حسابات أو مؤقتات"]
+      "zh": [
+        "前 20 关免费游玩",
+        "离线整理颜色并规划倒水顺序",
+        "无广告、无账号、无时间限制"
+      ],
+      "en": [
+        "First 20 levels free",
+        "Sort colors offline and plan each pour",
+        "No ads, accounts, or timers"
+      ],
+      "zh-Hant": [
+        "前 20 關免費遊玩",
+        "離線整理顏色並規劃倒水順序",
+        "無廣告、無帳號、無時間限制"
+      ],
+      "ja": [
+        "最初の20ステージは無料",
+        "オフラインで色を整理して注ぐ順番を考える",
+        "広告・アカウント・時間制限なし"
+      ],
+      "es": [
+        "Primeros 20 niveles gratis",
+        "Ordena colores sin conexión y planifica cada vertido",
+        "Sin anuncios, cuentas ni temporizadores"
+      ],
+      "de": [
+        "Die ersten 20 Level kostenlos",
+        "Farben offline sortieren und jeden Guss planen",
+        "Keine Werbung, Konten oder Zeitlimits"
+      ],
+      "fr": [
+        "20 premiers niveaux gratuits",
+        "Trie les couleurs hors ligne et planifie chaque versement",
+        "Sans publicité, compte ni limite de temps"
+      ],
+      "ko": [
+        "처음 20레벨 무료",
+        "오프라인에서 색을 나누고 붓는 순서 계획하기",
+        "광고, 계정, 시간 제한 없음"
+      ],
+      "pt-BR": [
+        "Primeiros 20 níveis grátis",
+        "Organize cores offline e planeje cada despejo",
+        "Sem anúncios, contas ou cronômetros"
+      ],
+      "it": [
+        "Primi 20 livelli gratuiti",
+        "Ordina i colori offline e pianifica ogni versamento",
+        "Senza pubblicità, account o timer"
+      ],
+      "pl": [
+        "Pierwsze 20 poziomów za darmo",
+        "Sortuj kolory offline i planuj każde przelewanie",
+        "Bez reklam, kont i limitów czasu"
+      ],
+      "ru": [
+        "Первые 20 уровней бесплатно",
+        "Сортируйте цвета офлайн и планируйте переливания",
+        "Без рекламы, аккаунтов и таймеров"
+      ],
+      "ar": [
+        "أول 20 مستوى مجاناً",
+        "رتّب الألوان دون اتصال وخطّط لكل سكب",
+        "بلا إعلانات أو حسابات أو مؤقتات"
+      ]
     },
     "support_url": "support.html"
   },
@@ -586,7 +638,7 @@
       "id": "6810296725",
       "country": "us",
       "store_name_en": "Animal Coloring Games for Kids",
-      "last_synced": "2026-09-19T14:38:26.929Z"
+      "last_synced": "2026-09-22T12:47:51.460Z"
     },
     "artwork": {
       "icon": "assets/animal-color-garden-app-icon.jpg",
@@ -629,19 +681,247 @@
       "ar": "اختر لوناً واضغط داخل إطار الحيوان لتلوينه. أول 20 مستوى مجاني، وتفتح عملية شراء واحدة بعد موافقة ولي الأمر رسومات إضافية."
     },
     "features": {
-      "zh": ["前 20 关免费游玩", "点按、换色、重涂或撤销", "无广告、无账号、无时间限制"],
-      "en": ["First 20 levels free", "Tap, recolor, and undo", "No ads, accounts, or timers"],
-      "zh-Hant": ["前 20 關免費遊玩", "點按、換色、重塗或復原", "無廣告、無帳號、無時間限制"],
-      "ja": ["最初の20ステージは無料", "タップ、塗り直し、取り消し", "広告・アカウント・時間制限なし"],
-      "es": ["Primeros 20 niveles gratis", "Toca, cambia colores y deshaz", "Sin anuncios, cuentas ni temporizadores"],
-      "de": ["Die ersten 20 Level kostenlos", "Antippen, neu färben und rückgängig machen", "Keine Werbung, Konten oder Zeitlimits"],
-      "fr": ["20 premiers niveaux gratuits", "Touche, recolore et annule", "Sans publicité, compte ni limite de temps"],
-      "ko": ["처음 20레벨 무료", "탭하고 다시 색칠하고 실행 취소하기", "광고, 계정, 시간 제한 없음"],
-      "pt-BR": ["Primeiros 20 níveis grátis", "Toque, recolora e desfaça", "Sem anúncios, contas ou cronômetros"],
-      "it": ["Primi 20 livelli gratuiti", "Tocca, ricolora e annulla", "Senza pubblicità, account o timer"],
-      "pl": ["Pierwsze 20 poziomów za darmo", "Dotykaj, koloruj ponownie i cofaj", "Bez reklam, kont i limitów czasu"],
-      "ru": ["Первые 20 уровней бесплатно", "Нажимайте, перекрашивайте и отменяйте ход", "Без рекламы, аккаунтов и таймеров"],
-      "ar": ["أول 20 مستوى مجاناً", "اضغط وأعد التلوين وتراجع عن الخطوة", "بلا إعلانات أو حسابات أو مؤقتات"]
+      "zh": [
+        "前 20 关免费游玩",
+        "点按、换色、重涂或撤销",
+        "无广告、无账号、无时间限制"
+      ],
+      "en": [
+        "First 20 levels free",
+        "Tap, recolor, and undo",
+        "No ads, accounts, or timers"
+      ],
+      "zh-Hant": [
+        "前 20 關免費遊玩",
+        "點按、換色、重塗或復原",
+        "無廣告、無帳號、無時間限制"
+      ],
+      "ja": [
+        "最初の20ステージは無料",
+        "タップ、塗り直し、取り消し",
+        "広告・アカウント・時間制限なし"
+      ],
+      "es": [
+        "Primeros 20 niveles gratis",
+        "Toca, cambia colores y deshaz",
+        "Sin anuncios, cuentas ni temporizadores"
+      ],
+      "de": [
+        "Die ersten 20 Level kostenlos",
+        "Antippen, neu färben und rückgängig machen",
+        "Keine Werbung, Konten oder Zeitlimits"
+      ],
+      "fr": [
+        "20 premiers niveaux gratuits",
+        "Touche, recolore et annule",
+        "Sans publicité, compte ni limite de temps"
+      ],
+      "ko": [
+        "처음 20레벨 무료",
+        "탭하고 다시 색칠하고 실행 취소하기",
+        "광고, 계정, 시간 제한 없음"
+      ],
+      "pt-BR": [
+        "Primeiros 20 níveis grátis",
+        "Toque, recolora e desfaça",
+        "Sem anúncios, contas ou cronômetros"
+      ],
+      "it": [
+        "Primi 20 livelli gratuiti",
+        "Tocca, ricolora e annulla",
+        "Senza pubblicità, account o timer"
+      ],
+      "pl": [
+        "Pierwsze 20 poziomów za darmo",
+        "Dotykaj, koloruj ponownie i cofaj",
+        "Bez reklam, kont i limitów czasu"
+      ],
+      "ru": [
+        "Первые 20 уровней бесплатно",
+        "Нажимайте, перекрашивайте и отменяйте ход",
+        "Без рекламы, аккаунтов и таймеров"
+      ],
+      "ar": [
+        "أول 20 مستوى مجاناً",
+        "اضغط وأعد التلوين وتراجع عن الخطوة",
+        "بلا إعلانات أو حسابات أو مؤقتات"
+      ]
+    },
+    "support_url": "support.html"
+  },
+  {
+    "id": "animal-link",
+    "status": "released",
+    "age": "6–8",
+    "locales": [
+      "en",
+      "zh-Hans",
+      "zh-Hant",
+      "ja",
+      "es",
+      "de",
+      "fr",
+      "ko",
+      "pt-BR",
+      "it",
+      "pl",
+      "ru",
+      "ar"
+    ],
+    "privacy": {
+      "data_collection": "none",
+      "tracking": "none",
+      "advertising": "none",
+      "child_accounts": "none"
+    },
+    "app_store": {
+      "id": "6804445347",
+      "country": "us",
+      "store_name_en": "Animal Link: Pair Match",
+      "last_synced": "2026-09-22T12:47:52.976Z"
+    },
+    "artwork": {
+      "icon": "assets/animal-link-app-icon.jpg",
+      "screenshots": [
+        "assets/animal-link-screenshot-01.jpg",
+        "assets/animal-link-screenshot-02.jpg",
+        "assets/animal-link-screenshot-03.jpg",
+        "assets/animal-link-screenshot-04.jpg"
+      ]
+    },
+    "app_store_url": "https://apps.apple.com/us/app/animal-link-pair-match/id6804445347",
+    "title": {
+      "en": "Animal Link: Pair Match",
+      "zh": "动物连连看：配对消除",
+      "zh-Hant": "動物連連看：配對消除",
+      "ja": "どうぶつペアマッチ",
+      "es": "Animales: conecta parejas",
+      "de": "Tierpaare: Kacheln verbinden",
+      "fr": "Animaux : connecte les paires",
+      "ko": "동물 타일 연결: 짝 맞추기",
+      "pt-BR": "Animais: conecte os pares",
+      "it": "Animali: collega le coppie",
+      "pl": "Zwierzęta: łączenie par",
+      "ru": "Животные: Соедини пары",
+      "ar": "صِل أزواج الحيوانات"
+    },
+    "summary": {
+      "en": "Find two matching animals, link them through empty spaces with no more than two bends, and choose each move to reveal the next route.",
+      "zh": "找到两只相同动物，沿空格连接，路线最多转弯两次。先消除哪一对，会改变接下来可以连接的路线。",
+      "zh-Hant": "找到兩隻相同動物，沿著空格連接，路線最多轉彎兩次。先消除哪一對，會改變接下來可以連接的路線。",
+      "ja": "同じどうぶつのペアを見つけ、空いたマスを通るルートでつなごう。曲がれるのは2回まで。消す順番で次の道が変わります。",
+      "es": "Encuentra dos animales iguales y únelos por casillas vacías con un máximo de dos giros. Cada pareja retirada puede abrir una ruta nueva.",
+      "de": "Finde zwei gleiche Tiere und verbinde sie durch freie Felder mit höchstens zwei Kurven. Jedes entfernte Paar kann einen neuen Weg öffnen.",
+      "fr": "Trouve deux animaux identiques et relie-les par des cases vides avec deux virages au maximum. Chaque paire retirée peut ouvrir un nouveau passage.",
+      "ko": "같은 동물 한 쌍을 찾아 빈칸을 따라 이어요. 선은 두 번까지만 꺾을 수 있고, 먼저 없앤 짝에 따라 다음 길이 열려요.",
+      "pt-BR": "Encontre dois animais iguais e ligue-os por espaços vazios com até duas curvas. Cada par removido pode abrir uma nova rota.",
+      "it": "Trova due animali uguali e collegali attraverso gli spazi vuoti, con un massimo di due svolte. Ogni coppia rimossa può aprire un nuovo percorso.",
+      "pl": "Znajdź dwa takie same zwierzęta i połącz je przez puste pola trasą z najwyżej dwoma zakrętami. Usunięta para może otworzyć nową drogę.",
+      "ru": "Найди двух одинаковых животных и соедини их линией через пустые клетки, сделав не более двух поворотов. Удалённая пара может открыть путь к следующей.",
+      "ar": "اعثر على حيوانين متطابقين وصلهما عبر الخانات الفارغة بمسار لا يزيد على انعطافين. قد تفتح إزالة زوج طريقًا جديدًا."
+    },
+    "features": {
+      "en": ["Link Pairs with Up to 2 Bends"],
+      "zh": ["最多两次转弯，连接相同图块"],
+      "zh-Hant": ["最多轉彎兩次，連接相同圖塊"],
+      "ja": ["2回まで曲がる道でペアをつなごう"],
+      "es": ["Une fichas con hasta dos giros"],
+      "de": ["Wege mit höchstens 2 Kurven"],
+      "fr": ["Relie en 2 virages maximum"],
+      "ko": ["두 번까지 꺾이는 길로 이어요"],
+      "pt-BR": ["Ligue peças com até 2 curvas"],
+      "it": ["Unisci con non più di 2 svolte"],
+      "pl": ["Połącz pary: do 2 zakrętów"],
+      "ru": ["Соединяй: до 2 поворотов"],
+      "ar": ["اربط بانعطافين كحد أقصى"]
+    },
+    "support_url": "support.html"
+  },
+  {
+    "id": "little-track-pathways",
+    "status": "released",
+    "age": "6–8",
+    "locales": [
+      "en",
+      "zh-Hans",
+      "zh-Hant",
+      "ja",
+      "es",
+      "de",
+      "fr",
+      "ko",
+      "pt-BR",
+      "it",
+      "pl",
+      "ru",
+      "ar"
+    ],
+    "privacy": {
+      "data_collection": "none",
+      "tracking": "none",
+      "advertising": "none",
+      "child_accounts": "none"
+    },
+    "app_store": {
+      "id": "6806461925",
+      "country": "us",
+      "store_name_en": "Road Puzzle: Animal Paths",
+      "last_synced": "2026-09-22T12:47:53.867Z"
+    },
+    "artwork": {
+      "icon": "assets/little-track-pathways-app-icon.jpg",
+      "screenshots": [
+        "assets/little-track-pathways-screenshot-01.jpg",
+        "assets/little-track-pathways-screenshot-02.jpg",
+        "assets/little-track-pathways-screenshot-03.jpg",
+        "assets/little-track-pathways-screenshot-04.jpg"
+      ]
+    },
+    "app_store_url": "https://apps.apple.com/us/app/road-puzzle-animal-paths/id6806461925",
+    "title": {
+      "en": "Road Puzzle: Animal Paths",
+      "zh": "旋转路线：动物回家",
+      "zh-Hant": "旋轉路線：動物回家",
+      "ja": "回転タイル：どうぶつルート",
+      "es": "Gira piezas: rutas de animales",
+      "de": "Drehpuzzle: Tierpfade",
+      "fr": "Puzzle de routes pour animaux",
+      "ko": "회전 타일: 동물 길 퍼즐",
+      "pt-BR": "Gire peças: rotas de animais",
+      "it": "Ruota tessere: animali a casa",
+      "pl": "Obracaj pola: trasy zwierząt",
+      "ru": "Поворот плиток: пути зверят",
+      "ar": "تدوير القطع: مسارات الحيوانات"
+    },
+    "summary": {
+      "en": "Turn the tiles, join the roads, and guide every animal home. Curves, branches, and fixed pieces make each board a fresh path puzzle.",
+      "zh": "转动方块，接通道路，送每只小动物回家。弯道、分支和固定方块，让每张棋盘都有不同的路线组合。",
+      "zh-Hant": "轉動方塊，接通道路，送每隻小動物回家。彎道、分支和固定方塊，讓每張棋盤都有不同的路線組合。",
+      "ja": "タイルをくるっと回して道をつなぎ、どうぶつをおうちへ。曲がり道や分かれ道、動かないタイルを手がかりにしよう。",
+      "es": "Gira las piezas, une los caminos y lleva a cada animal a su hogar. Las curvas, bifurcaciones y piezas fijas cambian cada tablero.",
+      "de": "Drehe die Felder, verbinde die Straßen und bringe jedes Tier zum passenden Haus. Kurven, Abzweigungen und feste Felder machen jedes Spielfeld anders.",
+      "fr": "Fais pivoter les tuiles, relie les routes et ramène chaque animal à sa maison. Virages, embranchements et tuiles fixes rendent chaque plateau différent.",
+      "ko": "타일을 돌려 길을 잇고 동물들을 알맞은 집으로 안내해요. 굽은 길, 갈림길, 고정 타일이 보드마다 새로운 연결을 만들어요.",
+      "pt-BR": "Gire as peças, conecte os caminhos e leve cada animal para a casa certa. Curvas, bifurcações e peças fixas tornam cada tabuleiro diferente.",
+      "it": "Gira le tessere, collega le strade e porta ogni animale alla casa giusta. Curve, bivi e tessere fisse cambiano ogni tabellone.",
+      "pl": "Obracaj pola, łącz drogi i prowadź każde zwierzę do właściwego domu. Zakręty, rozwidlenia i nieruchome pola sprawiają, że każda plansza jest inna.",
+      "ru": "Поворачивай плитки, соединяй дороги и веди каждого зверька к его дому. Изгибы, развилки и неподвижные плитки делают каждое поле особенным.",
+      "ar": "دوّر القطع، وصِل الطرق، وأعد كل حيوان إلى بيته المناسب. تجعل المنعطفات والتفرعات والقطع الثابتة كل لوحة مختلفة."
+    },
+    "features": {
+      "en": ["Rotate Pieces, Guide Them Home"],
+      "zh": ["转动方块，接通回家道路"],
+      "zh-Hant": ["轉動方塊，接通回家道路"],
+      "ja": ["道をつないでおうちへ"],
+      "es": ["Conecta caminos hasta su hogar"],
+      "de": ["Drehen und Tiere heimführen"],
+      "fr": ["Guide chaque animal chez lui"],
+      "ko": ["길을 이어 집으로 안내해요"],
+      "pt-BR": ["Conecte caminhos até as casas"],
+      "it": ["Collega le strade fino a casa"],
+      "pl": ["Łącz drogi, prowadź zwierzęta"],
+      "ru": ["Проложи дороги к домикам"],
+      "ar": ["صِل الطرق وأعد كل حيوان لبيته"]
     },
     "support_url": "support.html"
   }
