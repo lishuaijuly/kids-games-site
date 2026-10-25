@@ -37,8 +37,8 @@ Changed locales: `en`, `zh-Hans`, `zh-Hant`, `ja`, `es`, `de`, `fr`, `ko`, `pt-B
 
 Source intent and provenance:
 
-- `Animal Link`: current public English App Store identity plus the current 13-language `AppStore/metadata.json` delivery from `/Users/lewin/projects/animal-link/`.
-- `Little Track Pathways`: the current 13-language `AppStore/metadata.json` delivery from `/Users/lewin/projects/little-track-pathways/`.
+- `Animal Link`: current public English App Store identity plus the current 13-language `AppStore/metadata.json` delivery from `/Volumes/Developer/projects/ios-animal-link/`.
+- `Little Track Pathways`: the current 13-language `AppStore/metadata.json` delivery from `/Volumes/Developer/projects/ios-little-track-pathways/`.
 - Website summaries use the reviewed promotional text; feature bullets use the reviewed subtitles. No behavior, privacy practice, level inventory, or commercial claim was added or inferred.
 
 Review evidence: all 13 locales were mapped to their exact platform locale; source meaning, child-friendly tone, terminology, and Arabic punctuation/RTL content were checked against the supplied current metadata. `node scripts/check-localization.mjs` passed for 95 static strings × 13 locales and 7 game records.
